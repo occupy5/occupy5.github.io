@@ -100,14 +100,14 @@
   </url>
   
   <url>
-    <loc>http://5bang.top/blog/tags/index.html</loc>
+    <loc>http://5bang.top/blog/categories/index.html</loc>
     
     <lastmod>2020-07-13T06:18:05.726Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://5bang.top/blog/categories/index.html</loc>
+    <loc>http://5bang.top/blog/tags/index.html</loc>
     
     <lastmod>2020-07-13T06:18:05.726Z</lastmod>
     
@@ -261,14 +261,14 @@
   </url>
   
   <url>
-    <loc>http://5bang.top/2017/09/05/%E5%B0%91%E5%B9%B4%E5%B7%B4%E6%AF%94%E4%BC%A6/</loc>
+    <loc>http://5bang.top/2017/09/26/%E5%AB%8C%E7%96%91%E7%8A%AFX%E7%9A%84%E7%8C%AE%E8%BA%AB/</loc>
     
     <lastmod>2020-07-13T06:18:05.721Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://5bang.top/2017/09/26/%E5%AB%8C%E7%96%91%E7%8A%AFX%E7%9A%84%E7%8C%AE%E8%BA%AB/</loc>
+    <loc>http://5bang.top/2017/09/05/%E5%B0%91%E5%B9%B4%E5%B7%B4%E6%AF%94%E4%BC%A6/</loc>
     
     <lastmod>2020-07-13T06:18:05.721Z</lastmod>
     
@@ -513,6 +513,13 @@
   </url>
   
   <url>
+    <loc>http://5bang.top/2017/10/30/JavaScript_02/</loc>
+    
+    <lastmod>2020-07-13T06:18:05.712Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://5bang.top/2017/10/28/JavaScript_03/</loc>
     
     <lastmod>2020-07-13T06:18:05.712Z</lastmod>
@@ -521,13 +528,6 @@
   
   <url>
     <loc>http://5bang.top/2018/07/14/RegExp/</loc>
-    
-    <lastmod>2020-07-13T06:18:05.712Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://5bang.top/2017/10/30/JavaScript_02/</loc>
     
     <lastmod>2020-07-13T06:18:05.712Z</lastmod>
     
