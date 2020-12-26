@@ -1,0 +1,944 @@
+<!DOCTYPE html>
+<html style="display: none;" lang="zh">
+    <head><meta name="generator" content="Hexo 3.9.0">
+    <meta charset="utf-8">
+    <!--
+        © Material Theme
+        https://github.com/viosey/hexo-theme-material
+        Version: 1.5.0 -->
+    <script>
+        window.materialVersion = "1.5.0"
+        // Delete localstorage with these tags
+        window.oldVersion = [
+            'codestartv1',
+            '1.3.4',
+            '1.4.0',
+            '1.4.0b1'
+        ]
+    </script>
+
+    <!-- dns prefetch -->
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Title -->
+    
+    <title>
+        
+            周记 | 
+        
+        Shen&#39;s Blog
+    </title>
+
+    <!-- Meta & Info -->
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="theme-color" content="#778899">
+    <meta name="author" content="FanShen">
+    <meta name="description" itemprop="description" content="这是一篇周记(｡･ω･｡)">
+    <meta name="keywords" content="不求谌解,想法">
+
+    <!-- Import lsloader -->
+    <script>(function(){window.lsloader={jsRunSequence:[],jsnamemap:{},cssnamemap:{}};lsloader.removeLS=function(key){try{localStorage.removeItem(key)}catch(e){}};lsloader.setLS=function(key,val){try{localStorage.setItem(key,val)}catch(e){}};lsloader.getLS=function(key){var val="";try{val=localStorage.getItem(key)}catch(e){val=""}return val};versionString="/*"+(window.materialVersion||"unknownVersion")+"*/";lsloader.clean=function(){try{var keys=[];for(var i=0;i<localStorage.length;i++){keys.push(localStorage.key(i))}keys.forEach(function(key){var data=lsloader.getLS(key);if(window.oldVersion){var remove=window.oldVersion.reduce(function(p,c){return p||data.indexOf("/*"+c+"*/")!==-1},false);if(remove){lsloader.removeLS(key)}}})}catch(e){}};lsloader.clean();lsloader.load=function(jsname,jspath,cssonload,isJs){if(typeof cssonload==="boolean"){isJs=cssonload;cssonload=undefined}isJs=isJs||false;cssonload=cssonload||function(){};var code;code=this.getLS(jsname);if(code&&code.indexOf(versionString)===-1){this.removeLS(jsname);this.requestResource(jsname,jspath,cssonload,isJs);return}if(code){var versionNumber=code.split(versionString)[0];if(versionNumber!=jspath){console.log("reload:"+jspath);this.removeLS(jsname);this.requestResource(jsname,jspath,cssonload,isJs);return}code=code.split(versionString)[1];if(isJs){this.jsRunSequence.push({name:jsname,code:code});this.runjs(jspath,jsname,code)}else{document.getElementById(jsname).appendChild(document.createTextNode(code));cssonload()}}else{this.requestResource(jsname,jspath,cssonload,isJs)}};lsloader.requestResource=function(name,path,cssonload,isJs){var that=this;if(isJs){this.iojs(path,name,function(path,name,code){that.setLS(name,path+versionString+code);that.runjs(path,name,code)})}else{this.iocss(path,name,function(code){document.getElementById(name).appendChild(document.createTextNode(code));that.setLS(name,path+versionString+code)},cssonload)}};lsloader.iojs=function(path,jsname,callback){var that=this;that.jsRunSequence.push({name:jsname,code:""});try{var xhr=new XMLHttpRequest;xhr.open("get",path,true);xhr.onreadystatechange=function(){if(xhr.readyState==4){if(xhr.status>=200&&xhr.status<300||xhr.status==304){if(xhr.response!=""){callback(path,jsname,xhr.response);return}}that.jsfallback(path,jsname)}};xhr.send(null)}catch(e){that.jsfallback(path,jsname)}};lsloader.iocss=function(path,jsname,callback,cssonload){var that=this;try{var xhr=new XMLHttpRequest;xhr.open("get",path,true);xhr.onreadystatechange=function(){if(xhr.readyState==4){if(xhr.status>=200&&xhr.status<300||xhr.status==304){if(xhr.response!=""){callback(xhr.response);cssonload();return}}that.cssfallback(path,jsname,cssonload)}};xhr.send(null)}catch(e){that.cssfallback(path,jsname,cssonload)}};lsloader.iofonts=function(path,jsname,callback,cssonload){var that=this;try{var xhr=new XMLHttpRequest;xhr.open("get",path,true);xhr.onreadystatechange=function(){if(xhr.readyState==4){if(xhr.status>=200&&xhr.status<300||xhr.status==304){if(xhr.response!=""){callback(xhr.response);cssonload();return}}that.cssfallback(path,jsname,cssonload)}};xhr.send(null)}catch(e){that.cssfallback(path,jsname,cssonload)}};lsloader.runjs=function(path,name,code){if(!!name&&!!code){for(var k in this.jsRunSequence){if(this.jsRunSequence[k].name==name){this.jsRunSequence[k].code=code}}}if(!!this.jsRunSequence[0]&&!!this.jsRunSequence[0].code&&this.jsRunSequence[0].status!="failed"){var script=document.createElement("script");script.appendChild(document.createTextNode(this.jsRunSequence[0].code));script.type="text/javascript";document.getElementsByTagName("head")[0].appendChild(script);this.jsRunSequence.shift();if(this.jsRunSequence.length>0){this.runjs()}}else if(!!this.jsRunSequence[0]&&this.jsRunSequence[0].status=="failed"){var that=this;var script=document.createElement("script");script.src=this.jsRunSequence[0].path;script.type="text/javascript";this.jsRunSequence[0].status="loading";script.onload=function(){that.jsRunSequence.shift();if(that.jsRunSequence.length>0){that.runjs()}};document.body.appendChild(script)}};lsloader.tagLoad=function(path,name){this.jsRunSequence.push({name:name,code:"",path:path,status:"failed"});this.runjs()};lsloader.jsfallback=function(path,name){if(!!this.jsnamemap[name]){return}else{this.jsnamemap[name]=name}for(var k in this.jsRunSequence){if(this.jsRunSequence[k].name==name){this.jsRunSequence[k].code="";this.jsRunSequence[k].status="failed";this.jsRunSequence[k].path=path}}this.runjs()};lsloader.cssfallback=function(path,name,cssonload){if(!!this.cssnamemap[name]){return}else{this.cssnamemap[name]=1}var link=document.createElement("link");link.type="text/css";link.href=path;link.rel="stylesheet";link.onload=link.onerror=cssonload;var root=document.getElementsByTagName("script")[0];root.parentNode.insertBefore(link,root)};lsloader.runInlineScript=function(scriptId,codeId){var code=document.getElementById(codeId).innerText;this.jsRunSequence.push({name:scriptId,code:code});this.runjs()};lsloader.loadCombo=function(jslist){var updateList="";var requestingModules={};for(var k in jslist){var LS=this.getLS(jslist[k].name);if(!!LS){var version=LS.split(versionString)[0];var code=LS.split(versionString)[1]}else{var version=""}if(version==jslist[k].path){this.jsRunSequence.push({name:jslist[k].name,code:code,path:jslist[k].path})}else{this.jsRunSequence.push({name:jslist[k].name,code:null,path:jslist[k].path,status:"comboloading"});requestingModules[jslist[k].name]=true;updateList+=(updateList==""?"":";")+jslist[k].path}}var that=this;if(!!updateList){var xhr=new XMLHttpRequest;xhr.open("get",combo+updateList,true);xhr.onreadystatechange=function(){if(xhr.readyState==4){if(xhr.status>=200&&xhr.status<300||xhr.status==304){if(xhr.response!=""){that.runCombo(xhr.response,requestingModules);return}}else{for(var i in that.jsRunSequence){if(requestingModules[that.jsRunSequence[i].name]){that.jsRunSequence[i].status="failed"}}that.runjs()}}};xhr.send(null)}this.runjs()};lsloader.runCombo=function(comboCode,requestingModules){comboCode=comboCode.split("/*combojs*/");comboCode.shift();for(var k in this.jsRunSequence){if(!!requestingModules[this.jsRunSequence[k].name]&&!!comboCode[0]){this.jsRunSequence[k].status="comboJS";this.jsRunSequence[k].code=comboCode[0];this.setLS(this.jsRunSequence[k].name,this.jsRunSequence[k].path+versionString+comboCode[0]);comboCode.shift()}}this.runjs()}})();</script>
+
+    <!-- Import queue -->
+    <script>function Queue(){this.dataStore=[];this.offer=b;this.poll=d;this.execNext=a;this.debug=false;this.startDebug=c;function b(e){if(this.debug){console.log("Offered a Queued Function.")}if(typeof e==="function"){this.dataStore.push(e)}else{console.log("You must offer a function.")}}function d(){if(this.debug){console.log("Polled a Queued Function.")}return this.dataStore.shift()}function a(){var e=this.poll();if(e!==undefined){if(this.debug){console.log("Run a Queued Function.")}e()}}function c(){this.debug=true}}var queue=new Queue();</script>
+
+    <!-- Favicons -->
+    <link rel="icon shortcut" type="image/ico" href="https://img.5bang.top/favicon.png">
+    <link rel="icon" sizes="192x192" href="https://img.5bang.top/favicon.png">
+    <link rel="apple-touch-icon" href="https://img.5bang.top/favicon.png">
+
+    <!--iOS -->
+    <meta name="apple-mobile-web-app-title" content="Title">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="480">
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Shen&#39;s Blog">
+
+    <!-- Site Verification -->
+    
+    
+
+    <!-- RSS -->
+    
+
+    <!--[if lte IE 9]>
+        <link rel="stylesheet" href="/css/ie-blocker.css">
+
+        
+            <script src="/js/ie-blocker.zhCN.js"></script>
+        
+    <![endif]-->
+
+    <!-- Import CSS -->
+    
+        <style id="material_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("material_css","/css/material.min.css?Z7a72R1E4SxzBKR/WGctOA==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+        <style id="style_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("style_css","/css/style.min.css?MKetZV3cUTfDxvMffaOezg==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+
+        
+
+    
+
+    
+
+    <!-- Config CSS -->
+
+<!-- Other Styles -->
+<style>
+  body, html {
+    font-family: Roboto, "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+    overflow-x: hidden !important;
+  }
+  
+  code {
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  }
+
+  a {
+    color: #6495ED;
+  }
+
+  .mdl-card__media,
+  #search-label,
+  #search-form-label:after,
+  #scheme-Paradox .hot_tags-count,
+  #scheme-Paradox .sidebar_archives-count,
+  #scheme-Paradox .sidebar-colored .sidebar-header,
+  #scheme-Paradox .sidebar-colored .sidebar-badge{
+    background-color: #778899 !important;
+  }
+
+  /* Sidebar User Drop Down Menu Text Color */
+  #scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:hover,
+  #scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:focus {
+    color: #778899 !important;
+  }
+
+  #post_entry-right-info,
+  .sidebar-colored .sidebar-nav li:hover > a,
+  .sidebar-colored .sidebar-nav li:hover > a i,
+  .sidebar-colored .sidebar-nav li > a:hover,
+  .sidebar-colored .sidebar-nav li > a:hover i,
+  .sidebar-colored .sidebar-nav li > a:focus i,
+  .sidebar-colored .sidebar-nav > .open > a,
+  .sidebar-colored .sidebar-nav > .open > a:hover,
+  .sidebar-colored .sidebar-nav > .open > a:focus,
+  #ds-reset #ds-ctx .ds-ctx-entry .ds-ctx-head a {
+    color: #778899 !important;
+  }
+
+  .toTop {
+    background: #757575 !important;
+  }
+
+  .material-layout .material-post>.material-nav,
+  .material-layout .material-index>.material-nav,
+  .material-nav a {
+    color: #757575;
+  }
+
+  #scheme-Paradox .MD-burger-layer {
+    background-color: #757575;
+  }
+
+  #scheme-Paradox #post-toc-trigger-btn {
+    color: #757575;
+  }
+
+  .post-toc a:hover {
+    color: #6495ED;
+    text-decoration: underline;
+  }
+
+</style>
+
+
+<!-- Theme Background Related-->
+
+    <style>
+      body{
+        background-color: #F5F5F5;
+      }
+
+      /* blog_info bottom background */
+      #scheme-Paradox .material-layout .something-else .mdl-card__supporting-text{
+        background-color: #fff;
+      }
+    </style>
+
+
+
+
+<!-- Fade Effect -->
+
+    <style>
+      .fade {
+        transition: all 800ms linear;
+        -webkit-transform: translate3d(0,0,0);
+        -moz-transform: translate3d(0,0,0);
+        -ms-transform: translate3d(0,0,0);
+        -o-transform: translate3d(0,0,0);
+        transform: translate3d(0,0,0);
+        opacity: 1;
+      }
+
+      .fade.out{
+        opacity: 0;
+      }
+    </style>
+
+
+<!-- Import Font -->
+<!-- Import Roboto -->
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+
+
+<!-- Import Material Icon -->
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+
+
+    <!-- Import jQuery -->
+    
+        <script>lsloader.load("jq_js","/js/jquery.min.js?qcusAULNeBksqffqUM2+Ig==", true)</script>
+    
+
+    <!-- The Open Graph protocol -->
+    <meta property="og:url" content="http://5bang.top">
+    <meta property="og:type" content="blog">
+    <meta property="og:title" content="周记 | Shen&#39;s Blog">
+    <meta property="og:image" content="http://5bang.tophttps://img.5bang.top/favicon.png">
+    <meta property="og:description" content="这是一篇周记(｡･ω･｡)">
+    <meta property="og:article:tag" content="想法"> 
+
+    
+        <meta property="article:published_time" content="Sun Dec 15 2019 00:00:00 GMT+0800">
+        <meta property="article:modified_time" content="Mon Jul 13 2020 14:18:05 GMT+0800">
+    
+
+    <!-- The Twitter Card protocol -->
+    <meta name="twitter:title" content="周记 | Shen&#39;s Blog">
+    <meta name="twitter:description" content="这是一篇周记(｡･ω･｡)">
+    <meta name="twitter:image" content="http://5bang.tophttps://img.5bang.top/favicon.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="http://5bang.top">
+
+    <!-- Add canonical link for SEO -->
+    
+        <link rel="canonical" href="http://5bang.top/2019/12/15/weeks_07/index.html">
+    
+
+    <!-- Structured-data for SEO -->
+    
+        
+
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "mainEntityOfPage": "http://5bang.top/2019/12/15/weeks_07/index.html",
+    "headline": "周记",
+    "datePublished": "Sun Dec 15 2019 00:00:00 GMT+0800",
+    "dateModified": "Mon Jul 13 2020 14:18:05 GMT+0800",
+    "author": {
+        "@type": "Person",
+        "name": "FanShen",
+        "image": {
+            "@type": "ImageObject",
+            "url": "https://img.5bang.top/avatar.png"
+        },
+        "description": "不求谌解"
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "Shen&#39;s Blog",
+        "logo": {
+            "@type":"ImageObject",
+            "url": "https://img.5bang.top/favicon.png"
+        }
+    },
+    "keywords": ",想法不求谌解",
+    "description": "这是一篇周记(｡･ω･｡)",
+}
+</script>
+
+
+    
+
+    <!-- Analytics -->
+    
+    
+        <script>
+    var _hmt = _hmt || [];
+    (function() {var hm = document.createElement('script');
+    hm.src = 'https://hm.baidu.com/hm.js?839e08a3c6580e39bb06107e856538a3';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+    
+    
+
+    <!-- Custom Head -->
+    
+
+</head>
+
+
+    
+        <body id="scheme-Paradox" class="lazy">
+            <div class="material-layout  mdl-js-layout has-drawer is-upgraded">
+                
+
+                <!-- Main Container -->
+                <main class="material-layout__content" id="main">
+
+                    <!-- Top Anchor -->
+                    <div id="top"></div>
+
+                    
+                        <!-- Hamburger Button -->
+                        <button class="MD-burger-icon sidebar-toggle">
+                            <span class="MD-burger-layer"></span>
+                        </button>
+                    
+
+                    <!-- Post TOC -->
+
+    
+    <!-- Back Button -->
+    <!--
+    <div class="material-back" id="backhome-div" tabindex="0">
+        <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"
+           href="#" onclick="window.history.back();return false;"
+           target="_self"
+           role="button"
+           data-upgraded=",MaterialButton,MaterialRipple">
+            <i class="material-icons" role="presentation">arrow_back</i>
+            <span class="mdl-button__ripple-container">
+                <span class="mdl-ripple"></span>
+            </span>
+        </a>
+    </div>
+    -->
+
+
+    <!-- Left aligned menu below button -->
+    
+    
+
+
+
+
+<!-- Layouts -->
+
+    <!-- Post Module -->
+    <div class="material-post_container">
+
+        <div class="material-post mdl-grid">
+            <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
+
+                <!-- Post Header(Thumbnail & Title) -->
+                
+    <!-- Paradox Post Header -->
+    
+        <!-- Custom Thumbnail -->
+        <div class="post_thumbnail-custom mdl-card__media mdl-color-text--grey-50" style="background-image:url(https://img.5bang.top/12-15.jpg)">
+    
+            <p class="article-headline-p">
+                周记
+            </p>
+        </div>
+
+
+
+
+
+                
+                    <!-- Paradox Post Info -->
+                    <div class="mdl-color-text--grey-700 mdl-card__supporting-text meta">
+
+    <!-- Author Avatar -->
+    <div id="author-avatar">
+        <img src="https://img.5bang.top/avatar.png" width="44px" height="44px" alt="Author Avatar"/>
+    </div>
+    <!-- Author Name & Date -->
+    <div>
+        <strong>FanShen</strong>
+        <span>12月 15, 2019</span>
+    </div>
+
+    <div class="section-spacer"></div>
+
+    <!-- Favorite -->
+    <!--
+        <button id="article-functions-like-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon btn-like">
+            <i class="material-icons" role="presentation">favorite</i>
+            <span class="visuallyhidden">favorites</span>
+        </button>
+    -->
+
+    <!-- Qrcode -->
+    
+
+    <!-- Tags (bookmark) -->
+    
+    <button id="article-functions-viewtags-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+        <i class="material-icons" role="presentation">bookmark</i>
+        <span class="visuallyhidden">bookmark</span>
+    </button>
+    <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-viewtags-button">
+        <li class="mdl-menu__item">
+        <a class="post_tag-link" href="/tags/想法/">想法</a>
+    </ul>
+    
+
+    <!-- Share -->
+    <button id="article-fuctions-share-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">share</i>
+    <span class="visuallyhidden">share</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-fuctions-share-button">
+    
+
+    
+
+    <!-- Share Weibo -->
+    
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=周记&url=http://5bang.top/2019/12/15/weeks_07/index.html&pic=http://5bang.tophttps://img.5bang.top/favicon.png&searchPic=false&style=simple" target="_blank">
+            <li class="mdl-menu__item">
+                分享到微博
+            </li>
+        </a>
+    
+
+    <!-- Share Twitter -->
+    
+
+    <!-- Share Facebook -->
+    
+
+    <!-- Share Google+ -->
+    
+        <a class="post_share-link" href="https://plus.google.com/share?url=http://5bang.top/2019/12/15/weeks_07/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Google+
+            </li>
+        </a>
+    
+
+    <!-- Share LinkedIn -->
+    
+
+    <!-- Share QQ -->
+    
+        <a class="post_share-link" href="http://connect.qq.com/widget/shareqq/index.html?site=Shen&#39;s Blog&title=周记&summary=NaN&pics=http://5bang.tophttps://img.5bang.top/favicon.png&url=http://5bang.top/2019/12/15/weeks_07/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 QQ
+            </li>
+        </a>
+    
+
+    <!-- Share Telegram -->
+    
+</ul>
+
+</div>
+
+                
+
+                <!-- Post Content -->
+                <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
+    
+        <div id="hbe-security">
+  <div class="hbe-input-container">
+  <input type="password" class="hbe-form-control" id="pass" placeholder="💲🎗🌜🌱🎗🌴" />
+    <label for="pass">💲🎗🌜🌱🎗🌴</label>
+    <div class="bottom-line"></div>
+  </div>
+</div>
+<div id="decryptionError" style="display: none;">Incorrect Password!</div>
+<div id="noContentError" style="display: none;">No content to display!</div>
+<div id="encrypt-blog" style="display:none">
+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
+</div>
+<script src="/lib/crypto-js.js"></script><script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">
+        
+    
+
+    
+</div>
+
+
+                
+
+                <!-- Post Comments -->
+                
+                    
+                
+            </div>
+
+            <!-- Post Prev & Next Nav -->
+            <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
+    <!-- Prev Nav -->
+    
+        <a href="/2019/12/25/Tang_Poems/" id="post_nav-newer" class="prev-content">
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_back</i>
+            </button>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            下一篇
+        </a>
+    
+
+    <!-- Section Spacer -->
+    <div class="section-spacer"></div>
+
+    <!-- Next Nav -->
+    
+        <a href="/2019/11/07/git/" id="post_nav-older" class="next-content">
+            上一篇
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_forward</i>
+            </button>
+        </a>
+    
+</nav>
+
+        </div>
+    </div>
+
+
+
+                    
+                        <!-- Overlay For Active Sidebar -->
+<div class="sidebar-overlay"></div>
+
+<!-- Material sidebar -->
+<aside id="sidebar" class="sidebar sidebar-colored sidebar-fixed-left" role="navigation">
+    <div id="sidebar-main">
+        <!-- Sidebar Header -->
+        <div class="sidebar-header header-cover" style="background-image: url(https://img.5bang.top/sidebar_header.png);">
+    <!-- Top bar -->
+    <div class="top-bar"></div>
+
+    <!-- Sidebar toggle button -->
+    <button type="button" class="sidebar-toggle mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" style="display: initial;" data-upgraded=",MaterialButton,MaterialRipple">
+        <i class="material-icons">clear_all</i>
+        <span class="mdl-button__ripple-container">
+            <span class="mdl-ripple">
+            </span>
+        </span>
+    </button>
+
+    <!-- Sidebar Avatar -->
+    <div class="sidebar-image">
+        <img src="https://img.5bang.top/avatar.png" alt="FanShen's avatar">
+    </div>
+
+    <!-- Sidebar Email -->
+    <a data-toggle="dropdown" class="sidebar-brand" href="#settings-dropdown">
+        ei_shen@163.com
+        <b class="caret"></b>
+    </a>
+</div>
+
+
+        <!-- Sidebar Navigation  -->
+        <ul class="nav sidebar-nav">
+    <!-- User dropdown  -->
+    <li class="dropdown">
+        <ul id="settings-dropdown" class="dropdown-menu">
+            
+                <li>
+                    <a href="mailto: ei_shen@163.com" target="_blank" title="Email Me">
+                        
+                            <i class="material-icons sidebar-material-icons sidebar-indent-left1pc-element">send</i>
+                        
+                        Email Me
+                    </a>
+                </li>
+            
+        </ul>
+    </li>
+
+    <!-- Homepage -->
+    
+        <li id="sidebar-first-li">
+            <a href="/">
+                
+                    <i class="material-icons sidebar-material-icons">home</i>
+                
+                主页
+            </a>
+        </li>
+        
+    
+
+    <!-- Archives  -->
+    
+        <li class="dropdown">
+            <a href="#" class="ripple-effect dropdown-toggle" data-toggle="dropdown">
+                
+                    <i class="material-icons sidebar-material-icons">inbox</i>
+                
+                    归档
+                <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+            <li>
+                <a class="sidebar_archives-link" href="/archives/2020/07/">七月 2020<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2020/04/">四月 2020<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2020/03/">三月 2020<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2020/02/">二月 2020<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2019/12/">十二月 2019<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/archives/2019/11/">十一月 2019<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2019/09/">九月 2019<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2019/07/">七月 2019<span class="sidebar_archives-count">4</span></a></li><li><a class="sidebar_archives-link" href="/archives/2019/04/">四月 2019<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2019/03/">三月 2019<span class="sidebar_archives-count">3</span></a></li><li><a class="sidebar_archives-link" href="/archives/2019/02/">二月 2019<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2019/01/">一月 2019<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/12/">十二月 2018<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/11/">十一月 2018<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/10/">十月 2018<span class="sidebar_archives-count">3</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/09/">九月 2018<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/07/">七月 2018<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/05/">五月 2018<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/04/">四月 2018<span class="sidebar_archives-count">3</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/03/">三月 2018<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/12/">十二月 2017<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/11/">十一月 2017<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/10/">十月 2017<span class="sidebar_archives-count">8</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/09/">九月 2017<span class="sidebar_archives-count">28</span></a>
+            </ul>
+        </li>
+        
+    
+
+    <!-- Categories  -->
+    
+        <li class="dropdown">
+            <a href="#" class="ripple-effect dropdown-toggle" data-toggle="dropdown">
+                
+                    <i class="material-icons sidebar-material-icons">view_quilt</i>
+                
+                分类
+                <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+                <li>
+                <a class="sidebar_archives-link" href="/categories/LHTL/">LHTL<span class="sidebar_archives-count">4</span></a></li><li><a class="sidebar_archives-link" href="/categories/kindle-笔记/">kindle 笔记<span class="sidebar_archives-count">24</span></a></li><li><a class="sidebar_archives-link" href="/categories/前端/">前端<span class="sidebar_archives-count">23</span></a></li><li><a class="sidebar_archives-link" href="/categories/学习笔记/">学习笔记<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/categories/软件测试/">软件测试<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/随笔/">随笔<span class="sidebar_archives-count">18</span></a>
+            </ul>
+        </li>
+        
+            <li class="divider"></li>
+        
+    
+
+    <!-- Pages  -->
+    
+        <li>
+            <a href="/timeline" title="时间轴">
+                
+                    <i class="material-icons sidebar-material-icons">opacity</i>
+                
+                时间轴
+            </a>
+        </li>
+        
+    
+        <li>
+            <a href="/tags" title="标签云">
+                
+                    <i class="material-icons sidebar-material-icons">cloud_queue</i>
+                
+                标签云
+            </a>
+        </li>
+        
+    
+        <li>
+            <a href="/about" title="关于我">
+                
+                    <i class="material-icons sidebar-material-icons">person</i>
+                
+                关于我
+            </a>
+        </li>
+        
+            <li class="divider"></li>
+        
+    
+
+    <!-- Article Number  -->
+    
+        <li>
+            <a href="/archives">
+                文章总数
+                <span class="sidebar-badge">72</span>
+            </a>
+        </li>
+        
+    
+</ul>
+
+
+        <!-- Sidebar Footer -->
+        <!--
+I'm glad you use this theme, the development is no so easy, I hope you can keep the copyright, I will thank you so much.
+If you still want to delete the copyrights, could you still retain the first one? Which namely "Theme Material"
+It will not impact the appearance and can give developers a lot of support :)
+
+很高兴您使用并喜欢该主题，开发不易 十分谢谢与希望您可以保留一下版权声明。
+如果您仍然想删除的话 能否只保留第一项呢？即 "Theme Material"
+它不会影响美观并可以给开发者很大的支持和动力。 :)
+-->
+
+<!-- Sidebar Divider -->
+
+
+<!-- Theme Material -->
+
+
+<!-- Help & Support -->
+<!--
+
+-->
+
+<!-- Feedback -->
+<!--
+
+-->
+
+<!-- About Theme -->
+<!--
+
+-->
+
+    </div>
+
+    <!-- Sidebar Image -->
+    
+
+</aside>
+
+                    
+
+                    
+                        <!-- Footer Top Button -->
+                        <div id="back-to-top" class="toTop-wrap">
+    <a href="#top" class="toTop">
+        <i class="material-icons footer_top-i">expand_less</i>
+    </a>
+</div>
+
+                    
+
+                    <!--Footer-->
+<footer class="mdl-mini-footer" id="bottom">
+    
+        <!-- Paradox Footer Left Section -->
+        <div class="mdl-mini-footer--left-section sns-list">
+    <!-- Twitter -->
+    
+
+    <!-- Facebook -->
+    
+
+    <!-- Google + -->
+    
+
+    <!-- Weibo -->
+    
+
+    <!-- Instagram -->
+    
+
+    <!-- Tumblr -->
+    
+
+    <!-- Github -->
+    
+        <a href="https://github.com/occupy5" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn footer-sns-github">
+                <span class="visuallyhidden">Github</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- LinkedIn -->
+    
+
+    <!-- Zhihu -->
+    
+        <a href="https://www.zhihu.com/people/occupy5" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn footer-sns-zhihu">
+                <span class="visuallyhidden">Zhihu</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- Bilibili -->
+    
+
+    <!-- Telegram -->
+    
+    
+    <!-- V2EX -->
+    
+</div>
+
+
+        <!--Copyright -->
+        <div id="copyright">
+            Copyright&nbsp;©<script type="text/javascript">var fd = new Date();document.write("&nbsp;" + fd.getFullYear() + "&nbsp;");</script>Shen's Blog
+            
+        </div>
+       
+        <!-- Paradox Footer Right Section -->
+
+        <!--
+        I am glad you use this theme, the development is no so easy, I hope you can keep the copyright.
+        It will not impact the appearance and can give developers a lot of support :)
+
+        很高兴您使用该主题，开发不易，希望您可以保留一下版权声明。
+        它不会影响美观并可以给开发者很大的支持。 :)
+        -->
+
+        <div class="mdl-mini-footer--right-section">
+            <div>
+                <div class="footer-develop-div">Powered by <a href="https://hexo.io" target="_blank" class="footer-develop-a">Hexo</a></div>
+                <div class="footer-develop-div">Theme - <a href="https://github.com/viosey/hexo-theme-material" target="_blank" class="footer-develop-a">Material</a></div>
+            </div>
+        </div>
+    
+</footer>
+
+
+                    <!-- Import JS File -->
+
+    <script>lsloader.load("lazyload_js","/js/lazyload.min.js?1BcfzuNXqV+ntF6gq+5X3Q==", true)</script>
+
+
+
+    <script>lsloader.load("js_js","/js/js.min.js?V/53wGualMuiPM3xoetD5Q==", true)</script>
+
+
+
+    <script>lsloader.load("np_js","/js/nprogress.js?pl3Qhb9lvqR1FlyLUna1Yw==", true)</script>
+
+
+<script type="text/ls-javascript" id="NProgress-script">
+    NProgress.configure({
+        showSpinner: true
+    });
+    NProgress.start();
+    $('#nprogress .bar').css({
+        'background': '#29d'
+    });
+    $('#nprogress .peg').css({
+        'box-shadow': '0 0 10px #29d, 0 0 15px #29d'
+    });
+    $('#nprogress .spinner-icon').css({
+        'border-top-color': '#29d',
+        'border-left-color': '#29d'
+    });
+    setTimeout(function() {
+        NProgress.done();
+        $('.fade').removeClass('out');
+    }, 800);
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- UC Browser Compatible -->
+<script>
+	var agent = navigator.userAgent.toLowerCase();
+	if(agent.indexOf('ucbrowser')>0) {
+		document.write('<link rel="stylesheet" href="/css/uc.css">');
+	   alert('由于 UC 浏览器使用极旧的内核，而本网站使用了一些新的特性。\n为了您能更好的浏览，推荐使用 Chrome 或 Firefox 浏览器。');
+	}
+</script>
+
+<!-- Import prettify js  -->
+
+
+    
+        <script>lsloader.load("hanabi","/js/hanabi-browser-bundle.js?Pki5+pzkluqu53g+ouMWpA==", true)</script>
+    
+
+
+<!-- Window Load -->
+<!-- add class for prettify -->
+<script type="text/ls-javascript" id="window-load">
+    $(window).on('load', function() {
+        // Post_Toc parent position fixed
+        $('.post-toc-wrap').parent('.mdl-menu__container').css('position', 'fixed');
+    });
+
+    
+    
+        
+        
+        HanabiBrowser.start('pre code',true);
+    
+</script>
+
+<!-- MathJax Load-->
+
+
+<!-- Bing Background -->
+
+
+<script type="text/ls-javascript" id="lazy-load">
+    // Offer LazyLoad
+    queue.offer(function(){
+        $('.lazy').lazyload({
+            effect : 'show'
+        });
+    });
+
+    // Start Queue
+    $(document).ready(function(){
+        setInterval(function(){
+            queue.execNext();
+        },200);
+    });
+</script>
+
+<!-- Custom Footer -->
+
+
+
+<script>
+    (function(){
+        var scriptList = document.querySelectorAll('script[type="text/ls-javascript"]')
+
+        for (var i = 0; i < scriptList.length; ++i) {
+            var item = scriptList[i];
+            lsloader.runInlineScript(item.id,item.id);
+        }
+    })()
+console.log('\n %c © Material Theme | Version: 1.5.0 | https://github.com/viosey/hexo-theme-material %c \n', 'color:#455a64;background:#e0e0e0;padding:5px 0;border-top-left-radius:5px;border-bottom-left-radius:5px;', 'color:#455a64;background:#e0e0e0;padding:5px 0;border-top-right-radius:5px;border-bottom-right-radius:5px;');
+</script>
+
+                </main>
+            </div>
+        </body>
+    
+</html>

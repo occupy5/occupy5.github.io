@@ -1,0 +1,944 @@
+<!DOCTYPE html>
+<html style="display: none;" lang="zh">
+    <head><meta name="generator" content="Hexo 3.9.0">
+    <meta charset="utf-8">
+    <!--
+        © Material Theme
+        https://github.com/viosey/hexo-theme-material
+        Version: 1.5.0 -->
+    <script>
+        window.materialVersion = "1.5.0"
+        // Delete localstorage with these tags
+        window.oldVersion = [
+            'codestartv1',
+            '1.3.4',
+            '1.4.0',
+            '1.4.0b1'
+        ]
+    </script>
+
+    <!-- dns prefetch -->
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Title -->
+    
+    <title>
+        
+            One more step | 
+        
+        Shen&#39;s Blog
+    </title>
+
+    <!-- Meta & Info -->
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="theme-color" content="#778899">
+    <meta name="author" content="FanShen">
+    <meta name="description" itemprop="description" content="不🇿​🇭​🇮​所言...">
+    <meta name="keywords" content="不求谌解,NaN">
+
+    <!-- Import lsloader -->
+    <script>(function(){window.lsloader={jsRunSequence:[],jsnamemap:{},cssnamemap:{}};lsloader.removeLS=function(key){try{localStorage.removeItem(key)}catch(e){}};lsloader.setLS=function(key,val){try{localStorage.setItem(key,val)}catch(e){}};lsloader.getLS=function(key){var val="";try{val=localStorage.getItem(key)}catch(e){val=""}return val};versionString="/*"+(window.materialVersion||"unknownVersion")+"*/";lsloader.clean=function(){try{var keys=[];for(var i=0;i<localStorage.length;i++){keys.push(localStorage.key(i))}keys.forEach(function(key){var data=lsloader.getLS(key);if(window.oldVersion){var remove=window.oldVersion.reduce(function(p,c){return p||data.indexOf("/*"+c+"*/")!==-1},false);if(remove){lsloader.removeLS(key)}}})}catch(e){}};lsloader.clean();lsloader.load=function(jsname,jspath,cssonload,isJs){if(typeof cssonload==="boolean"){isJs=cssonload;cssonload=undefined}isJs=isJs||false;cssonload=cssonload||function(){};var code;code=this.getLS(jsname);if(code&&code.indexOf(versionString)===-1){this.removeLS(jsname);this.requestResource(jsname,jspath,cssonload,isJs);return}if(code){var versionNumber=code.split(versionString)[0];if(versionNumber!=jspath){console.log("reload:"+jspath);this.removeLS(jsname);this.requestResource(jsname,jspath,cssonload,isJs);return}code=code.split(versionString)[1];if(isJs){this.jsRunSequence.push({name:jsname,code:code});this.runjs(jspath,jsname,code)}else{document.getElementById(jsname).appendChild(document.createTextNode(code));cssonload()}}else{this.requestResource(jsname,jspath,cssonload,isJs)}};lsloader.requestResource=function(name,path,cssonload,isJs){var that=this;if(isJs){this.iojs(path,name,function(path,name,code){that.setLS(name,path+versionString+code);that.runjs(path,name,code)})}else{this.iocss(path,name,function(code){document.getElementById(name).appendChild(document.createTextNode(code));that.setLS(name,path+versionString+code)},cssonload)}};lsloader.iojs=function(path,jsname,callback){var that=this;that.jsRunSequence.push({name:jsname,code:""});try{var xhr=new XMLHttpRequest;xhr.open("get",path,true);xhr.onreadystatechange=function(){if(xhr.readyState==4){if(xhr.status>=200&&xhr.status<300||xhr.status==304){if(xhr.response!=""){callback(path,jsname,xhr.response);return}}that.jsfallback(path,jsname)}};xhr.send(null)}catch(e){that.jsfallback(path,jsname)}};lsloader.iocss=function(path,jsname,callback,cssonload){var that=this;try{var xhr=new XMLHttpRequest;xhr.open("get",path,true);xhr.onreadystatechange=function(){if(xhr.readyState==4){if(xhr.status>=200&&xhr.status<300||xhr.status==304){if(xhr.response!=""){callback(xhr.response);cssonload();return}}that.cssfallback(path,jsname,cssonload)}};xhr.send(null)}catch(e){that.cssfallback(path,jsname,cssonload)}};lsloader.iofonts=function(path,jsname,callback,cssonload){var that=this;try{var xhr=new XMLHttpRequest;xhr.open("get",path,true);xhr.onreadystatechange=function(){if(xhr.readyState==4){if(xhr.status>=200&&xhr.status<300||xhr.status==304){if(xhr.response!=""){callback(xhr.response);cssonload();return}}that.cssfallback(path,jsname,cssonload)}};xhr.send(null)}catch(e){that.cssfallback(path,jsname,cssonload)}};lsloader.runjs=function(path,name,code){if(!!name&&!!code){for(var k in this.jsRunSequence){if(this.jsRunSequence[k].name==name){this.jsRunSequence[k].code=code}}}if(!!this.jsRunSequence[0]&&!!this.jsRunSequence[0].code&&this.jsRunSequence[0].status!="failed"){var script=document.createElement("script");script.appendChild(document.createTextNode(this.jsRunSequence[0].code));script.type="text/javascript";document.getElementsByTagName("head")[0].appendChild(script);this.jsRunSequence.shift();if(this.jsRunSequence.length>0){this.runjs()}}else if(!!this.jsRunSequence[0]&&this.jsRunSequence[0].status=="failed"){var that=this;var script=document.createElement("script");script.src=this.jsRunSequence[0].path;script.type="text/javascript";this.jsRunSequence[0].status="loading";script.onload=function(){that.jsRunSequence.shift();if(that.jsRunSequence.length>0){that.runjs()}};document.body.appendChild(script)}};lsloader.tagLoad=function(path,name){this.jsRunSequence.push({name:name,code:"",path:path,status:"failed"});this.runjs()};lsloader.jsfallback=function(path,name){if(!!this.jsnamemap[name]){return}else{this.jsnamemap[name]=name}for(var k in this.jsRunSequence){if(this.jsRunSequence[k].name==name){this.jsRunSequence[k].code="";this.jsRunSequence[k].status="failed";this.jsRunSequence[k].path=path}}this.runjs()};lsloader.cssfallback=function(path,name,cssonload){if(!!this.cssnamemap[name]){return}else{this.cssnamemap[name]=1}var link=document.createElement("link");link.type="text/css";link.href=path;link.rel="stylesheet";link.onload=link.onerror=cssonload;var root=document.getElementsByTagName("script")[0];root.parentNode.insertBefore(link,root)};lsloader.runInlineScript=function(scriptId,codeId){var code=document.getElementById(codeId).innerText;this.jsRunSequence.push({name:scriptId,code:code});this.runjs()};lsloader.loadCombo=function(jslist){var updateList="";var requestingModules={};for(var k in jslist){var LS=this.getLS(jslist[k].name);if(!!LS){var version=LS.split(versionString)[0];var code=LS.split(versionString)[1]}else{var version=""}if(version==jslist[k].path){this.jsRunSequence.push({name:jslist[k].name,code:code,path:jslist[k].path})}else{this.jsRunSequence.push({name:jslist[k].name,code:null,path:jslist[k].path,status:"comboloading"});requestingModules[jslist[k].name]=true;updateList+=(updateList==""?"":";")+jslist[k].path}}var that=this;if(!!updateList){var xhr=new XMLHttpRequest;xhr.open("get",combo+updateList,true);xhr.onreadystatechange=function(){if(xhr.readyState==4){if(xhr.status>=200&&xhr.status<300||xhr.status==304){if(xhr.response!=""){that.runCombo(xhr.response,requestingModules);return}}else{for(var i in that.jsRunSequence){if(requestingModules[that.jsRunSequence[i].name]){that.jsRunSequence[i].status="failed"}}that.runjs()}}};xhr.send(null)}this.runjs()};lsloader.runCombo=function(comboCode,requestingModules){comboCode=comboCode.split("/*combojs*/");comboCode.shift();for(var k in this.jsRunSequence){if(!!requestingModules[this.jsRunSequence[k].name]&&!!comboCode[0]){this.jsRunSequence[k].status="comboJS";this.jsRunSequence[k].code=comboCode[0];this.setLS(this.jsRunSequence[k].name,this.jsRunSequence[k].path+versionString+comboCode[0]);comboCode.shift()}}this.runjs()}})();</script>
+
+    <!-- Import queue -->
+    <script>function Queue(){this.dataStore=[];this.offer=b;this.poll=d;this.execNext=a;this.debug=false;this.startDebug=c;function b(e){if(this.debug){console.log("Offered a Queued Function.")}if(typeof e==="function"){this.dataStore.push(e)}else{console.log("You must offer a function.")}}function d(){if(this.debug){console.log("Polled a Queued Function.")}return this.dataStore.shift()}function a(){var e=this.poll();if(e!==undefined){if(this.debug){console.log("Run a Queued Function.")}e()}}function c(){this.debug=true}}var queue=new Queue();</script>
+
+    <!-- Favicons -->
+    <link rel="icon shortcut" type="image/ico" href="https://img.5bang.top/favicon.png">
+    <link rel="icon" sizes="192x192" href="https://img.5bang.top/favicon.png">
+    <link rel="apple-touch-icon" href="https://img.5bang.top/favicon.png">
+
+    <!--iOS -->
+    <meta name="apple-mobile-web-app-title" content="Title">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="480">
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Shen&#39;s Blog">
+
+    <!-- Site Verification -->
+    
+    
+
+    <!-- RSS -->
+    
+
+    <!--[if lte IE 9]>
+        <link rel="stylesheet" href="/css/ie-blocker.css">
+
+        
+            <script src="/js/ie-blocker.zhCN.js"></script>
+        
+    <![endif]-->
+
+    <!-- Import CSS -->
+    
+        <style id="material_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("material_css","/css/material.min.css?Z7a72R1E4SxzBKR/WGctOA==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+        <style id="style_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("style_css","/css/style.min.css?MKetZV3cUTfDxvMffaOezg==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+
+        
+
+    
+
+    
+
+    <!-- Config CSS -->
+
+<!-- Other Styles -->
+<style>
+  body, html {
+    font-family: Roboto, "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+    overflow-x: hidden !important;
+  }
+  
+  code {
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  }
+
+  a {
+    color: #6495ED;
+  }
+
+  .mdl-card__media,
+  #search-label,
+  #search-form-label:after,
+  #scheme-Paradox .hot_tags-count,
+  #scheme-Paradox .sidebar_archives-count,
+  #scheme-Paradox .sidebar-colored .sidebar-header,
+  #scheme-Paradox .sidebar-colored .sidebar-badge{
+    background-color: #778899 !important;
+  }
+
+  /* Sidebar User Drop Down Menu Text Color */
+  #scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:hover,
+  #scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:focus {
+    color: #778899 !important;
+  }
+
+  #post_entry-right-info,
+  .sidebar-colored .sidebar-nav li:hover > a,
+  .sidebar-colored .sidebar-nav li:hover > a i,
+  .sidebar-colored .sidebar-nav li > a:hover,
+  .sidebar-colored .sidebar-nav li > a:hover i,
+  .sidebar-colored .sidebar-nav li > a:focus i,
+  .sidebar-colored .sidebar-nav > .open > a,
+  .sidebar-colored .sidebar-nav > .open > a:hover,
+  .sidebar-colored .sidebar-nav > .open > a:focus,
+  #ds-reset #ds-ctx .ds-ctx-entry .ds-ctx-head a {
+    color: #778899 !important;
+  }
+
+  .toTop {
+    background: #757575 !important;
+  }
+
+  .material-layout .material-post>.material-nav,
+  .material-layout .material-index>.material-nav,
+  .material-nav a {
+    color: #757575;
+  }
+
+  #scheme-Paradox .MD-burger-layer {
+    background-color: #757575;
+  }
+
+  #scheme-Paradox #post-toc-trigger-btn {
+    color: #757575;
+  }
+
+  .post-toc a:hover {
+    color: #6495ED;
+    text-decoration: underline;
+  }
+
+</style>
+
+
+<!-- Theme Background Related-->
+
+    <style>
+      body{
+        background-color: #F5F5F5;
+      }
+
+      /* blog_info bottom background */
+      #scheme-Paradox .material-layout .something-else .mdl-card__supporting-text{
+        background-color: #fff;
+      }
+    </style>
+
+
+
+
+<!-- Fade Effect -->
+
+    <style>
+      .fade {
+        transition: all 800ms linear;
+        -webkit-transform: translate3d(0,0,0);
+        -moz-transform: translate3d(0,0,0);
+        -ms-transform: translate3d(0,0,0);
+        -o-transform: translate3d(0,0,0);
+        transform: translate3d(0,0,0);
+        opacity: 1;
+      }
+
+      .fade.out{
+        opacity: 0;
+      }
+    </style>
+
+
+<!-- Import Font -->
+<!-- Import Roboto -->
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+
+
+<!-- Import Material Icon -->
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+
+
+    <!-- Import jQuery -->
+    
+        <script>lsloader.load("jq_js","/js/jquery.min.js?qcusAULNeBksqffqUM2+Ig==", true)</script>
+    
+
+    <!-- The Open Graph protocol -->
+    <meta property="og:url" content="http://5bang.top">
+    <meta property="og:type" content="blog">
+    <meta property="og:title" content="One more step | Shen&#39;s Blog">
+    <meta property="og:image" content="http://5bang.tophttps://img.5bang.top/favicon.png">
+    <meta property="og:description" content="不🇿​🇭​🇮​所言...">
+    <meta property="og:article:tag" content="NaN"> 
+
+    
+        <meta property="article:published_time" content="Wed Oct 25 2017 00:00:00 GMT+0800">
+        <meta property="article:modified_time" content="Mon Jul 13 2020 14:18:05 GMT+0800">
+    
+
+    <!-- The Twitter Card protocol -->
+    <meta name="twitter:title" content="One more step | Shen&#39;s Blog">
+    <meta name="twitter:description" content="不🇿​🇭​🇮​所言...">
+    <meta name="twitter:image" content="http://5bang.tophttps://img.5bang.top/favicon.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="http://5bang.top">
+
+    <!-- Add canonical link for SEO -->
+    
+        <link rel="canonical" href="http://5bang.top/2017/10/25/weeks_02/index.html">
+    
+
+    <!-- Structured-data for SEO -->
+    
+        
+
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "mainEntityOfPage": "http://5bang.top/2017/10/25/weeks_02/index.html",
+    "headline": "One more step",
+    "datePublished": "Wed Oct 25 2017 00:00:00 GMT+0800",
+    "dateModified": "Mon Jul 13 2020 14:18:05 GMT+0800",
+    "author": {
+        "@type": "Person",
+        "name": "FanShen",
+        "image": {
+            "@type": "ImageObject",
+            "url": "https://img.5bang.top/avatar.png"
+        },
+        "description": "不求谌解"
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "Shen&#39;s Blog",
+        "logo": {
+            "@type":"ImageObject",
+            "url": "https://img.5bang.top/favicon.png"
+        }
+    },
+    "keywords": ",NaN不求谌解",
+    "description": "不🇿​🇭​🇮​所言...",
+}
+</script>
+
+
+    
+
+    <!-- Analytics -->
+    
+    
+        <script>
+    var _hmt = _hmt || [];
+    (function() {var hm = document.createElement('script');
+    hm.src = 'https://hm.baidu.com/hm.js?839e08a3c6580e39bb06107e856538a3';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+    
+    
+
+    <!-- Custom Head -->
+    
+
+</head>
+
+
+    
+        <body id="scheme-Paradox" class="lazy">
+            <div class="material-layout  mdl-js-layout has-drawer is-upgraded">
+                
+
+                <!-- Main Container -->
+                <main class="material-layout__content" id="main">
+
+                    <!-- Top Anchor -->
+                    <div id="top"></div>
+
+                    
+                        <!-- Hamburger Button -->
+                        <button class="MD-burger-icon sidebar-toggle">
+                            <span class="MD-burger-layer"></span>
+                        </button>
+                    
+
+                    <!-- Post TOC -->
+
+    
+    <!-- Back Button -->
+    <!--
+    <div class="material-back" id="backhome-div" tabindex="0">
+        <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"
+           href="#" onclick="window.history.back();return false;"
+           target="_self"
+           role="button"
+           data-upgraded=",MaterialButton,MaterialRipple">
+            <i class="material-icons" role="presentation">arrow_back</i>
+            <span class="mdl-button__ripple-container">
+                <span class="mdl-ripple"></span>
+            </span>
+        </a>
+    </div>
+    -->
+
+
+    <!-- Left aligned menu below button -->
+    
+    
+
+
+
+
+<!-- Layouts -->
+
+    <!-- Post Module -->
+    <div class="material-post_container">
+
+        <div class="material-post mdl-grid">
+            <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
+
+                <!-- Post Header(Thumbnail & Title) -->
+                
+    <!-- Paradox Post Header -->
+    
+        <!-- Custom Thumbnail -->
+        <div class="post_thumbnail-custom mdl-card__media mdl-color-text--grey-50" style="background-image:url(https://img.5bang.top/1027.jpg)">
+    
+            <p class="article-headline-p">
+                One more step
+            </p>
+        </div>
+
+
+
+
+
+                
+                    <!-- Paradox Post Info -->
+                    <div class="mdl-color-text--grey-700 mdl-card__supporting-text meta">
+
+    <!-- Author Avatar -->
+    <div id="author-avatar">
+        <img src="https://img.5bang.top/avatar.png" width="44px" height="44px" alt="Author Avatar"/>
+    </div>
+    <!-- Author Name & Date -->
+    <div>
+        <strong>FanShen</strong>
+        <span>10月 25, 2017</span>
+    </div>
+
+    <div class="section-spacer"></div>
+
+    <!-- Favorite -->
+    <!--
+        <button id="article-functions-like-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon btn-like">
+            <i class="material-icons" role="presentation">favorite</i>
+            <span class="visuallyhidden">favorites</span>
+        </button>
+    -->
+
+    <!-- Qrcode -->
+    
+
+    <!-- Tags (bookmark) -->
+    
+    <button id="article-functions-viewtags-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+        <i class="material-icons" role="presentation">bookmark</i>
+        <span class="visuallyhidden">bookmark</span>
+    </button>
+    <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-viewtags-button">
+        <li class="mdl-menu__item">
+        <a class="post_tag-link" href="/tags/NaN/">NaN</a>
+    </ul>
+    
+
+    <!-- Share -->
+    <button id="article-fuctions-share-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">share</i>
+    <span class="visuallyhidden">share</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-fuctions-share-button">
+    
+
+    
+
+    <!-- Share Weibo -->
+    
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=One more step&url=http://5bang.top/2017/10/25/weeks_02/index.html&pic=http://5bang.tophttps://img.5bang.top/favicon.png&searchPic=false&style=simple" target="_blank">
+            <li class="mdl-menu__item">
+                分享到微博
+            </li>
+        </a>
+    
+
+    <!-- Share Twitter -->
+    
+
+    <!-- Share Facebook -->
+    
+
+    <!-- Share Google+ -->
+    
+        <a class="post_share-link" href="https://plus.google.com/share?url=http://5bang.top/2017/10/25/weeks_02/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Google+
+            </li>
+        </a>
+    
+
+    <!-- Share LinkedIn -->
+    
+
+    <!-- Share QQ -->
+    
+        <a class="post_share-link" href="http://connect.qq.com/widget/shareqq/index.html?site=Shen&#39;s Blog&title=One more step&summary=NaN&pics=http://5bang.tophttps://img.5bang.top/favicon.png&url=http://5bang.top/2017/10/25/weeks_02/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 QQ
+            </li>
+        </a>
+    
+
+    <!-- Share Telegram -->
+    
+</ul>
+
+</div>
+
+                
+
+                <!-- Post Content -->
+                <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
+    
+        <div id="hbe-security">
+  <div class="hbe-input-container">
+  <input type="password" class="hbe-form-control" id="pass" placeholder="💲🎗🌜🌱🎗🌴" />
+    <label for="pass">💲🎗🌜🌱🎗🌴</label>
+    <div class="bottom-line"></div>
+  </div>
+</div>
+<div id="decryptionError" style="display: none;">Incorrect Password!</div>
+<div id="noContentError" style="display: none;">No content to display!</div>
+<div id="encrypt-blog" style="display:none">
+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
+</div>
+<script src="/lib/crypto-js.js"></script><script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">
+        
+    
+
+    
+</div>
+
+
+                
+
+                <!-- Post Comments -->
+                
+                    
+                
+            </div>
+
+            <!-- Post Prev & Next Nav -->
+            <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
+    <!-- Prev Nav -->
+    
+        <a href="/2017/10/28/JavaScript_03/" id="post_nav-newer" class="prev-content">
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_back</i>
+            </button>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            下一篇
+        </a>
+    
+
+    <!-- Section Spacer -->
+    <div class="section-spacer"></div>
+
+    <!-- Next Nav -->
+    
+        <a href="/2017/10/23/笔面题/" id="post_nav-older" class="next-content">
+            上一篇
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_forward</i>
+            </button>
+        </a>
+    
+</nav>
+
+        </div>
+    </div>
+
+
+
+                    
+                        <!-- Overlay For Active Sidebar -->
+<div class="sidebar-overlay"></div>
+
+<!-- Material sidebar -->
+<aside id="sidebar" class="sidebar sidebar-colored sidebar-fixed-left" role="navigation">
+    <div id="sidebar-main">
+        <!-- Sidebar Header -->
+        <div class="sidebar-header header-cover" style="background-image: url(https://img.5bang.top/sidebar_header.png);">
+    <!-- Top bar -->
+    <div class="top-bar"></div>
+
+    <!-- Sidebar toggle button -->
+    <button type="button" class="sidebar-toggle mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" style="display: initial;" data-upgraded=",MaterialButton,MaterialRipple">
+        <i class="material-icons">clear_all</i>
+        <span class="mdl-button__ripple-container">
+            <span class="mdl-ripple">
+            </span>
+        </span>
+    </button>
+
+    <!-- Sidebar Avatar -->
+    <div class="sidebar-image">
+        <img src="https://img.5bang.top/avatar.png" alt="FanShen's avatar">
+    </div>
+
+    <!-- Sidebar Email -->
+    <a data-toggle="dropdown" class="sidebar-brand" href="#settings-dropdown">
+        ei_shen@163.com
+        <b class="caret"></b>
+    </a>
+</div>
+
+
+        <!-- Sidebar Navigation  -->
+        <ul class="nav sidebar-nav">
+    <!-- User dropdown  -->
+    <li class="dropdown">
+        <ul id="settings-dropdown" class="dropdown-menu">
+            
+                <li>
+                    <a href="mailto: ei_shen@163.com" target="_blank" title="Email Me">
+                        
+                            <i class="material-icons sidebar-material-icons sidebar-indent-left1pc-element">send</i>
+                        
+                        Email Me
+                    </a>
+                </li>
+            
+        </ul>
+    </li>
+
+    <!-- Homepage -->
+    
+        <li id="sidebar-first-li">
+            <a href="/">
+                
+                    <i class="material-icons sidebar-material-icons">home</i>
+                
+                主页
+            </a>
+        </li>
+        
+    
+
+    <!-- Archives  -->
+    
+        <li class="dropdown">
+            <a href="#" class="ripple-effect dropdown-toggle" data-toggle="dropdown">
+                
+                    <i class="material-icons sidebar-material-icons">inbox</i>
+                
+                    归档
+                <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+            <li>
+                <a class="sidebar_archives-link" href="/archives/2020/07/">七月 2020<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2020/04/">四月 2020<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2020/03/">三月 2020<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2020/02/">二月 2020<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2019/12/">十二月 2019<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/archives/2019/11/">十一月 2019<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2019/09/">九月 2019<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2019/07/">七月 2019<span class="sidebar_archives-count">4</span></a></li><li><a class="sidebar_archives-link" href="/archives/2019/04/">四月 2019<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2019/03/">三月 2019<span class="sidebar_archives-count">3</span></a></li><li><a class="sidebar_archives-link" href="/archives/2019/02/">二月 2019<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2019/01/">一月 2019<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/12/">十二月 2018<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/11/">十一月 2018<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/10/">十月 2018<span class="sidebar_archives-count">3</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/09/">九月 2018<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/07/">七月 2018<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/05/">五月 2018<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/04/">四月 2018<span class="sidebar_archives-count">3</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/03/">三月 2018<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/12/">十二月 2017<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/11/">十一月 2017<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/10/">十月 2017<span class="sidebar_archives-count">8</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/09/">九月 2017<span class="sidebar_archives-count">28</span></a>
+            </ul>
+        </li>
+        
+    
+
+    <!-- Categories  -->
+    
+        <li class="dropdown">
+            <a href="#" class="ripple-effect dropdown-toggle" data-toggle="dropdown">
+                
+                    <i class="material-icons sidebar-material-icons">view_quilt</i>
+                
+                分类
+                <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+                <li>
+                <a class="sidebar_archives-link" href="/categories/LHTL/">LHTL<span class="sidebar_archives-count">4</span></a></li><li><a class="sidebar_archives-link" href="/categories/kindle-笔记/">kindle 笔记<span class="sidebar_archives-count">24</span></a></li><li><a class="sidebar_archives-link" href="/categories/前端/">前端<span class="sidebar_archives-count">23</span></a></li><li><a class="sidebar_archives-link" href="/categories/学习笔记/">学习笔记<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/categories/软件测试/">软件测试<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/随笔/">随笔<span class="sidebar_archives-count">18</span></a>
+            </ul>
+        </li>
+        
+            <li class="divider"></li>
+        
+    
+
+    <!-- Pages  -->
+    
+        <li>
+            <a href="/timeline" title="时间轴">
+                
+                    <i class="material-icons sidebar-material-icons">opacity</i>
+                
+                时间轴
+            </a>
+        </li>
+        
+    
+        <li>
+            <a href="/tags" title="标签云">
+                
+                    <i class="material-icons sidebar-material-icons">cloud_queue</i>
+                
+                标签云
+            </a>
+        </li>
+        
+    
+        <li>
+            <a href="/about" title="关于我">
+                
+                    <i class="material-icons sidebar-material-icons">person</i>
+                
+                关于我
+            </a>
+        </li>
+        
+            <li class="divider"></li>
+        
+    
+
+    <!-- Article Number  -->
+    
+        <li>
+            <a href="/archives">
+                文章总数
+                <span class="sidebar-badge">72</span>
+            </a>
+        </li>
+        
+    
+</ul>
+
+
+        <!-- Sidebar Footer -->
+        <!--
+I'm glad you use this theme, the development is no so easy, I hope you can keep the copyright, I will thank you so much.
+If you still want to delete the copyrights, could you still retain the first one? Which namely "Theme Material"
+It will not impact the appearance and can give developers a lot of support :)
+
+很高兴您使用并喜欢该主题，开发不易 十分谢谢与希望您可以保留一下版权声明。
+如果您仍然想删除的话 能否只保留第一项呢？即 "Theme Material"
+它不会影响美观并可以给开发者很大的支持和动力。 :)
+-->
+
+<!-- Sidebar Divider -->
+
+
+<!-- Theme Material -->
+
+
+<!-- Help & Support -->
+<!--
+
+-->
+
+<!-- Feedback -->
+<!--
+
+-->
+
+<!-- About Theme -->
+<!--
+
+-->
+
+    </div>
+
+    <!-- Sidebar Image -->
+    
+
+</aside>
+
+                    
+
+                    
+                        <!-- Footer Top Button -->
+                        <div id="back-to-top" class="toTop-wrap">
+    <a href="#top" class="toTop">
+        <i class="material-icons footer_top-i">expand_less</i>
+    </a>
+</div>
+
+                    
+
+                    <!--Footer-->
+<footer class="mdl-mini-footer" id="bottom">
+    
+        <!-- Paradox Footer Left Section -->
+        <div class="mdl-mini-footer--left-section sns-list">
+    <!-- Twitter -->
+    
+
+    <!-- Facebook -->
+    
+
+    <!-- Google + -->
+    
+
+    <!-- Weibo -->
+    
+
+    <!-- Instagram -->
+    
+
+    <!-- Tumblr -->
+    
+
+    <!-- Github -->
+    
+        <a href="https://github.com/occupy5" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn footer-sns-github">
+                <span class="visuallyhidden">Github</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- LinkedIn -->
+    
+
+    <!-- Zhihu -->
+    
+        <a href="https://www.zhihu.com/people/occupy5" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn footer-sns-zhihu">
+                <span class="visuallyhidden">Zhihu</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- Bilibili -->
+    
+
+    <!-- Telegram -->
+    
+    
+    <!-- V2EX -->
+    
+</div>
+
+
+        <!--Copyright -->
+        <div id="copyright">
+            Copyright&nbsp;©<script type="text/javascript">var fd = new Date();document.write("&nbsp;" + fd.getFullYear() + "&nbsp;");</script>Shen's Blog
+            
+        </div>
+       
+        <!-- Paradox Footer Right Section -->
+
+        <!--
+        I am glad you use this theme, the development is no so easy, I hope you can keep the copyright.
+        It will not impact the appearance and can give developers a lot of support :)
+
+        很高兴您使用该主题，开发不易，希望您可以保留一下版权声明。
+        它不会影响美观并可以给开发者很大的支持。 :)
+        -->
+
+        <div class="mdl-mini-footer--right-section">
+            <div>
+                <div class="footer-develop-div">Powered by <a href="https://hexo.io" target="_blank" class="footer-develop-a">Hexo</a></div>
+                <div class="footer-develop-div">Theme - <a href="https://github.com/viosey/hexo-theme-material" target="_blank" class="footer-develop-a">Material</a></div>
+            </div>
+        </div>
+    
+</footer>
+
+
+                    <!-- Import JS File -->
+
+    <script>lsloader.load("lazyload_js","/js/lazyload.min.js?1BcfzuNXqV+ntF6gq+5X3Q==", true)</script>
+
+
+
+    <script>lsloader.load("js_js","/js/js.min.js?V/53wGualMuiPM3xoetD5Q==", true)</script>
+
+
+
+    <script>lsloader.load("np_js","/js/nprogress.js?pl3Qhb9lvqR1FlyLUna1Yw==", true)</script>
+
+
+<script type="text/ls-javascript" id="NProgress-script">
+    NProgress.configure({
+        showSpinner: true
+    });
+    NProgress.start();
+    $('#nprogress .bar').css({
+        'background': '#29d'
+    });
+    $('#nprogress .peg').css({
+        'box-shadow': '0 0 10px #29d, 0 0 15px #29d'
+    });
+    $('#nprogress .spinner-icon').css({
+        'border-top-color': '#29d',
+        'border-left-color': '#29d'
+    });
+    setTimeout(function() {
+        NProgress.done();
+        $('.fade').removeClass('out');
+    }, 800);
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- UC Browser Compatible -->
+<script>
+	var agent = navigator.userAgent.toLowerCase();
+	if(agent.indexOf('ucbrowser')>0) {
+		document.write('<link rel="stylesheet" href="/css/uc.css">');
+	   alert('由于 UC 浏览器使用极旧的内核，而本网站使用了一些新的特性。\n为了您能更好的浏览，推荐使用 Chrome 或 Firefox 浏览器。');
+	}
+</script>
+
+<!-- Import prettify js  -->
+
+
+    
+        <script>lsloader.load("hanabi","/js/hanabi-browser-bundle.js?Pki5+pzkluqu53g+ouMWpA==", true)</script>
+    
+
+
+<!-- Window Load -->
+<!-- add class for prettify -->
+<script type="text/ls-javascript" id="window-load">
+    $(window).on('load', function() {
+        // Post_Toc parent position fixed
+        $('.post-toc-wrap').parent('.mdl-menu__container').css('position', 'fixed');
+    });
+
+    
+    
+        
+        
+        HanabiBrowser.start('pre code',true);
+    
+</script>
+
+<!-- MathJax Load-->
+
+
+<!-- Bing Background -->
+
+
+<script type="text/ls-javascript" id="lazy-load">
+    // Offer LazyLoad
+    queue.offer(function(){
+        $('.lazy').lazyload({
+            effect : 'show'
+        });
+    });
+
+    // Start Queue
+    $(document).ready(function(){
+        setInterval(function(){
+            queue.execNext();
+        },200);
+    });
+</script>
+
+<!-- Custom Footer -->
+
+
+
+<script>
+    (function(){
+        var scriptList = document.querySelectorAll('script[type="text/ls-javascript"]')
+
+        for (var i = 0; i < scriptList.length; ++i) {
+            var item = scriptList[i];
+            lsloader.runInlineScript(item.id,item.id);
+        }
+    })()
+console.log('\n %c © Material Theme | Version: 1.5.0 | https://github.com/viosey/hexo-theme-material %c \n', 'color:#455a64;background:#e0e0e0;padding:5px 0;border-top-left-radius:5px;border-bottom-left-radius:5px;', 'color:#455a64;background:#e0e0e0;padding:5px 0;border-top-right-radius:5px;border-bottom-right-radius:5px;');
+</script>
+
+                </main>
+            </div>
+        </body>
+    
+</html>

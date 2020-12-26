@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+
+body {
+  font-family: "Open Sans";
+  background-color: #0d3158;
+  color: white;
+  background-image: url(../images/chip.svg);
+  /* Image from: https://opengameart.org/content/seamless-microscheme-texture */
+  background-size: 250px;
+  padding: 20px;
+  transition: background-color .15s ease-out;
+}
+
+body.show-story {
+  background-color: #163c12;
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 1.8em;
+  font-size: 700;
+}
+
+h2 {
+  margin: 0 0 2em 0;
+  padding: 0;
+  font-size: 1.2em;
+  opacity: .8;
+  font-weight: 400;
+  font-style: italic;
+}
+
+/* When the story is shown, hide all these things */
+.show-story h1,
+.show-story h2,
+.show-story .form {
+  display: none;
+}
+
+.story {
+  display: none;
+}
+
+.show-story .story {
+  display: block;
+}
+
+.monitor {
+  padding: 30px 30px 0 30px;
+  border-radius: 15px;
+  border-bottom: solid 12px rgba(0,0,0,.3);
+  max-width: 650px;
+  position: relative;
+}
+
+.monitor-name {
+  margin: 16px 0;
+  font-weight: 600;
+  color: rgba(0,0,0,.6);
+  text-shadow: 0 1px 0 rgba(255,255,255,.4);
+}
+
+.light {
+  height: 12px;
+  width: 12px;
+  position: absolute;
+  right: 30px;
+  bottom: 20px;
+  border-radius: 8px;
+  border: solid 2px rgba(0,0,0,.2);
+}
+
+.screen {
+  padding: 10px 15px 50px 15px;
+  border-radius: 15px;
+  font-family: monospace;
+}
+
+.screen .cursor {
+  animation: blink 1s linear infinite;
+}
+
+.story p {
+  font-size: 1.2em;
+  line-height: 1.4em;
+  color: #61ca49;
+  margin: 0 0 30px 0;
+  padding: 0;
+}
+
+p {
+  font-size: 1.125em;
+  font-weight:300;
+}
+
+button {
+  font-size: 1em;
+  line-height: 15px;
+  padding: 10px 22px 11px 22px;
+  box-sizing: border-box;
+  font-weight: 700;
+  border: solid 3px white;
+  color: white;
+  background: transparent;
+  border-radius: 30px;
+  transition: all ease-out .2s;
+  cursor: pointer;
+  outline: none;
+  margin-right: 5px;
+}
+
+.story button {
+  margin-top: 30px;
+}
+
+button:hover {
+  transform: scale(1.03);
+  background: rgba(255,255,255,.1);
+}
+
+button:active {
+  transform: scale(.97);
+}
+
+.directions {
+  font-size: 1em;
+}
+
+form {
+  margin-bottom: 3em;
+}
+
+label {
+  display: block;
+  margin: 15px 0 5px 0;
+  color: rgba(255,255,255,.75);
+  font-weight: 600;
+}
+
+form p {
+  font-size: .9em;
+  color: rgba(255,255,255,.8);
+}
+
+input {
+  font-size: inherit;
+  padding: 10px 8px 11px 8px;
+  outline: none;
+  border-radius: 2px;
+  border: none;
+  margin-right: 10px;
+  width: 300px;
+  font-family: inherit;
+  transition: transform .1s ease-out;
+  background: black;
+  color: green;
+  background: linear-gradient(-190deg, #111, black);
+  border: solid 2px black;
+  color: #61ca49;
+  font-family: monospace;
+  font-size: 1.25em;
+  position: relative;
+}
+
+/* Mozilla license info */
+
+.license {
+  position: fixed;
+  right: 15px;
+  bottom: 14px;
+  font-size: 13px;
+  color: white;
+  color: rgba(255,255,255,.4);
+}
+
+.license a {
+  margin-left: 5px;
+}
+
+.license img {
+  width: 60px;
+  opacity: .4;
+  position: relative;
+  top: 3px;
+  transition: opacity .2s ease-out;
+}
+
+.license img:hover {
+  opacity: .6;
+}
