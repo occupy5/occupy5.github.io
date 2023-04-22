@@ -1,0 +1,1133 @@
+<!DOCTYPE html>
+<html style="display: none;" lang="zh">
+    <head><meta name="generator" content="Hexo 3.9.0">
+    <meta charset="utf-8">
+    <!--
+        © Material Theme
+        https://github.com/viosey/hexo-theme-material
+        Version: 1.5.0 -->
+    <script>
+        window.materialVersion = "1.5.0"
+        // Delete localstorage with these tags
+        window.oldVersion = [
+            'codestartv1',
+            '1.3.4',
+            '1.4.0',
+            '1.4.0b1'
+        ]
+    </script>
+
+    <!-- dns prefetch -->
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Title -->
+    
+    <title>
+        
+            2023 State of Web Components | 
+        
+        Silas&#39;s Blog
+    </title>
+
+    <!-- Meta & Info -->
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="theme-color" content="#778899">
+    <meta name="author" content="Silas Shen">
+    <meta name="description" itemprop="description" content="NaN">
+    <meta name="keywords" content="不求谌解,JavaScript">
+
+    <!-- Import lsloader -->
+    <script>(function(){window.lsloader={jsRunSequence:[],jsnamemap:{},cssnamemap:{}};lsloader.removeLS=function(key){try{localStorage.removeItem(key)}catch(e){}};lsloader.setLS=function(key,val){try{localStorage.setItem(key,val)}catch(e){}};lsloader.getLS=function(key){var val="";try{val=localStorage.getItem(key)}catch(e){val=""}return val};versionString="/*"+(window.materialVersion||"unknownVersion")+"*/";lsloader.clean=function(){try{var keys=[];for(var i=0;i<localStorage.length;i++){keys.push(localStorage.key(i))}keys.forEach(function(key){var data=lsloader.getLS(key);if(window.oldVersion){var remove=window.oldVersion.reduce(function(p,c){return p||data.indexOf("/*"+c+"*/")!==-1},false);if(remove){lsloader.removeLS(key)}}})}catch(e){}};lsloader.clean();lsloader.load=function(jsname,jspath,cssonload,isJs){if(typeof cssonload==="boolean"){isJs=cssonload;cssonload=undefined}isJs=isJs||false;cssonload=cssonload||function(){};var code;code=this.getLS(jsname);if(code&&code.indexOf(versionString)===-1){this.removeLS(jsname);this.requestResource(jsname,jspath,cssonload,isJs);return}if(code){var versionNumber=code.split(versionString)[0];if(versionNumber!=jspath){console.log("reload:"+jspath);this.removeLS(jsname);this.requestResource(jsname,jspath,cssonload,isJs);return}code=code.split(versionString)[1];if(isJs){this.jsRunSequence.push({name:jsname,code:code});this.runjs(jspath,jsname,code)}else{document.getElementById(jsname).appendChild(document.createTextNode(code));cssonload()}}else{this.requestResource(jsname,jspath,cssonload,isJs)}};lsloader.requestResource=function(name,path,cssonload,isJs){var that=this;if(isJs){this.iojs(path,name,function(path,name,code){that.setLS(name,path+versionString+code);that.runjs(path,name,code)})}else{this.iocss(path,name,function(code){document.getElementById(name).appendChild(document.createTextNode(code));that.setLS(name,path+versionString+code)},cssonload)}};lsloader.iojs=function(path,jsname,callback){var that=this;that.jsRunSequence.push({name:jsname,code:""});try{var xhr=new XMLHttpRequest;xhr.open("get",path,true);xhr.onreadystatechange=function(){if(xhr.readyState==4){if(xhr.status>=200&&xhr.status<300||xhr.status==304){if(xhr.response!=""){callback(path,jsname,xhr.response);return}}that.jsfallback(path,jsname)}};xhr.send(null)}catch(e){that.jsfallback(path,jsname)}};lsloader.iocss=function(path,jsname,callback,cssonload){var that=this;try{var xhr=new XMLHttpRequest;xhr.open("get",path,true);xhr.onreadystatechange=function(){if(xhr.readyState==4){if(xhr.status>=200&&xhr.status<300||xhr.status==304){if(xhr.response!=""){callback(xhr.response);cssonload();return}}that.cssfallback(path,jsname,cssonload)}};xhr.send(null)}catch(e){that.cssfallback(path,jsname,cssonload)}};lsloader.iofonts=function(path,jsname,callback,cssonload){var that=this;try{var xhr=new XMLHttpRequest;xhr.open("get",path,true);xhr.onreadystatechange=function(){if(xhr.readyState==4){if(xhr.status>=200&&xhr.status<300||xhr.status==304){if(xhr.response!=""){callback(xhr.response);cssonload();return}}that.cssfallback(path,jsname,cssonload)}};xhr.send(null)}catch(e){that.cssfallback(path,jsname,cssonload)}};lsloader.runjs=function(path,name,code){if(!!name&&!!code){for(var k in this.jsRunSequence){if(this.jsRunSequence[k].name==name){this.jsRunSequence[k].code=code}}}if(!!this.jsRunSequence[0]&&!!this.jsRunSequence[0].code&&this.jsRunSequence[0].status!="failed"){var script=document.createElement("script");script.appendChild(document.createTextNode(this.jsRunSequence[0].code));script.type="text/javascript";document.getElementsByTagName("head")[0].appendChild(script);this.jsRunSequence.shift();if(this.jsRunSequence.length>0){this.runjs()}}else if(!!this.jsRunSequence[0]&&this.jsRunSequence[0].status=="failed"){var that=this;var script=document.createElement("script");script.src=this.jsRunSequence[0].path;script.type="text/javascript";this.jsRunSequence[0].status="loading";script.onload=function(){that.jsRunSequence.shift();if(that.jsRunSequence.length>0){that.runjs()}};document.body.appendChild(script)}};lsloader.tagLoad=function(path,name){this.jsRunSequence.push({name:name,code:"",path:path,status:"failed"});this.runjs()};lsloader.jsfallback=function(path,name){if(!!this.jsnamemap[name]){return}else{this.jsnamemap[name]=name}for(var k in this.jsRunSequence){if(this.jsRunSequence[k].name==name){this.jsRunSequence[k].code="";this.jsRunSequence[k].status="failed";this.jsRunSequence[k].path=path}}this.runjs()};lsloader.cssfallback=function(path,name,cssonload){if(!!this.cssnamemap[name]){return}else{this.cssnamemap[name]=1}var link=document.createElement("link");link.type="text/css";link.href=path;link.rel="stylesheet";link.onload=link.onerror=cssonload;var root=document.getElementsByTagName("script")[0];root.parentNode.insertBefore(link,root)};lsloader.runInlineScript=function(scriptId,codeId){var code=document.getElementById(codeId).innerText;this.jsRunSequence.push({name:scriptId,code:code});this.runjs()};lsloader.loadCombo=function(jslist){var updateList="";var requestingModules={};for(var k in jslist){var LS=this.getLS(jslist[k].name);if(!!LS){var version=LS.split(versionString)[0];var code=LS.split(versionString)[1]}else{var version=""}if(version==jslist[k].path){this.jsRunSequence.push({name:jslist[k].name,code:code,path:jslist[k].path})}else{this.jsRunSequence.push({name:jslist[k].name,code:null,path:jslist[k].path,status:"comboloading"});requestingModules[jslist[k].name]=true;updateList+=(updateList==""?"":";")+jslist[k].path}}var that=this;if(!!updateList){var xhr=new XMLHttpRequest;xhr.open("get",combo+updateList,true);xhr.onreadystatechange=function(){if(xhr.readyState==4){if(xhr.status>=200&&xhr.status<300||xhr.status==304){if(xhr.response!=""){that.runCombo(xhr.response,requestingModules);return}}else{for(var i in that.jsRunSequence){if(requestingModules[that.jsRunSequence[i].name]){that.jsRunSequence[i].status="failed"}}that.runjs()}}};xhr.send(null)}this.runjs()};lsloader.runCombo=function(comboCode,requestingModules){comboCode=comboCode.split("/*combojs*/");comboCode.shift();for(var k in this.jsRunSequence){if(!!requestingModules[this.jsRunSequence[k].name]&&!!comboCode[0]){this.jsRunSequence[k].status="comboJS";this.jsRunSequence[k].code=comboCode[0];this.setLS(this.jsRunSequence[k].name,this.jsRunSequence[k].path+versionString+comboCode[0]);comboCode.shift()}}this.runjs()}})();</script>
+
+    <!-- Import queue -->
+    <script>function Queue(){this.dataStore=[];this.offer=b;this.poll=d;this.execNext=a;this.debug=false;this.startDebug=c;function b(e){if(this.debug){console.log("Offered a Queued Function.")}if(typeof e==="function"){this.dataStore.push(e)}else{console.log("You must offer a function.")}}function d(){if(this.debug){console.log("Polled a Queued Function.")}return this.dataStore.shift()}function a(){var e=this.poll();if(e!==undefined){if(this.debug){console.log("Run a Queued Function.")}e()}}function c(){this.debug=true}}var queue=new Queue();</script>
+
+    <!-- Favicons -->
+    <link rel="icon shortcut" type="image/ico" href="https://img.5bang.top/favicon.png">
+    <link rel="icon" sizes="192x192" href="https://img.5bang.top/favicon.png">
+    <link rel="apple-touch-icon" href="https://img.5bang.top/favicon.png">
+
+    <!--iOS -->
+    <meta name="apple-mobile-web-app-title" content="Title">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="480">
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Silas&#39;s Blog">
+
+    <!-- Site Verification -->
+    
+    
+
+    <!-- RSS -->
+    
+
+    <!--[if lte IE 9]>
+        <link rel="stylesheet" href="/css/ie-blocker.css">
+
+        
+            <script src="/js/ie-blocker.zhCN.js"></script>
+        
+    <![endif]-->
+
+    <!-- Import CSS -->
+    
+        <style id="material_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("material_css","/css/material.min.css?Z7a72R1E4SxzBKR/WGctOA==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+        <style id="style_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("style_css","/css/style.min.css?MKetZV3cUTfDxvMffaOezg==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+
+        
+
+    
+
+    
+
+    <!-- Config CSS -->
+
+<!-- Other Styles -->
+<style>
+  body, html {
+    font-family: Roboto, "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+    overflow-x: hidden !important;
+  }
+
+  code {
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  }
+
+  a {
+    color: #6495ED;
+  }
+
+  /* custom style */
+
+  blockquote {
+    font-size: 16px;
+  }
+
+  .mdl-card__media,
+  #search-label,
+  #search-form-label:after,
+  #scheme-Paradox .hot_tags-count,
+  #scheme-Paradox .sidebar_archives-count,
+  #scheme-Paradox .sidebar-colored .sidebar-header,
+  #scheme-Paradox .sidebar-colored .sidebar-badge{
+    background-color: #778899 !important;
+  }
+
+  /* Sidebar User Drop Down Menu Text Color */
+  #scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:hover,
+  #scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:focus {
+    color: #778899 !important;
+  }
+
+  #post_entry-right-info,
+  .sidebar-colored .sidebar-nav li:hover > a,
+  .sidebar-colored .sidebar-nav li:hover > a i,
+  .sidebar-colored .sidebar-nav li > a:hover,
+  .sidebar-colored .sidebar-nav li > a:hover i,
+  .sidebar-colored .sidebar-nav li > a:focus i,
+  .sidebar-colored .sidebar-nav > .open > a,
+  .sidebar-colored .sidebar-nav > .open > a:hover,
+  .sidebar-colored .sidebar-nav > .open > a:focus,
+  #ds-reset #ds-ctx .ds-ctx-entry .ds-ctx-head a {
+    color: #778899 !important;
+  }
+
+  .toTop {
+    background: #757575 !important;
+  }
+
+  .material-layout .material-post>.material-nav,
+  .material-layout .material-index>.material-nav,
+  .material-nav a {
+    color: #757575;
+  }
+
+  #scheme-Paradox .MD-burger-layer {
+    background-color: #757575;
+  }
+
+  #scheme-Paradox #post-toc-trigger-btn {
+    color: #757575;
+  }
+
+  .post-toc a:hover {
+    color: #6495ED;
+    text-decoration: underline;
+  }
+
+</style>
+
+
+<!-- Theme Background Related-->
+
+    <style>
+      body{
+        background-color: #F5F5F5;
+      }
+
+      /* blog_info bottom background */
+      #scheme-Paradox .material-layout .something-else .mdl-card__supporting-text{
+        background-color: #fff;
+      }
+    </style>
+
+
+
+
+<!-- Fade Effect -->
+
+    <style>
+      .fade {
+        transition: all 800ms linear;
+        -webkit-transform: translate3d(0,0,0);
+        -moz-transform: translate3d(0,0,0);
+        -ms-transform: translate3d(0,0,0);
+        -o-transform: translate3d(0,0,0);
+        transform: translate3d(0,0,0);
+        opacity: 1;
+      }
+
+      .fade.out{
+        opacity: 0;
+      }
+    </style>
+
+
+<!-- Import Font -->
+<!-- Import Roboto -->
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+
+
+<!-- Import Material Icon -->
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+
+
+    <!-- Import jQuery -->
+    
+        <script>lsloader.load("jq_js","/js/jquery.min.js?qcusAULNeBksqffqUM2+Ig==", true)</script>
+    
+
+    <!-- The Open Graph protocol -->
+    <meta property="og:url" content="http://5bang.top">
+    <meta property="og:type" content="blog">
+    <meta property="og:title" content="2023 State of Web Components | Silas&#39;s Blog">
+    <meta property="og:image" content="http://5bang.tophttps://img.5bang.top/favicon.png">
+    <meta property="og:description" content="NaN">
+    <meta property="og:article:tag" content="JavaScript"> 
+
+    
+        <meta property="article:published_time" content="Fri Apr 21 2023 12:00:00 GMT+0800">
+        <meta property="article:modified_time" content="Sun Apr 23 2023 00:41:33 GMT+0800">
+    
+
+    <!-- The Twitter Card protocol -->
+    <meta name="twitter:title" content="2023 State of Web Components | Silas&#39;s Blog">
+    <meta name="twitter:description" content="NaN">
+    <meta name="twitter:image" content="http://5bang.tophttps://img.5bang.top/favicon.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="http://5bang.top">
+
+    <!-- Add canonical link for SEO -->
+    
+        <link rel="canonical" href="http://5bang.top/2023/04/21/2023_state_of_web_component/index.html">
+    
+
+    <!-- Structured-data for SEO -->
+    
+        
+
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "mainEntityOfPage": "http://5bang.top/2023/04/21/2023_state_of_web_component/index.html",
+    "headline": "2023 State of Web Components",
+    "datePublished": "Fri Apr 21 2023 12:00:00 GMT+0800",
+    "dateModified": "Sun Apr 23 2023 00:41:33 GMT+0800",
+    "author": {
+        "@type": "Person",
+        "name": "Silas Shen",
+        "image": {
+            "@type": "ImageObject",
+            "url": "https://img.5bang.top/avatar.png"
+        },
+        "description": "不求谌解"
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "Silas&#39;s Blog",
+        "logo": {
+            "@type":"ImageObject",
+            "url": "https://img.5bang.top/favicon.png"
+        }
+    },
+    "keywords": ",JavaScript不求谌解",
+    "description": "NaN",
+}
+</script>
+
+
+    
+
+    <!-- Analytics -->
+    
+    
+        <script>
+    var _hmt = _hmt || [];
+    (function() {var hm = document.createElement('script');
+    hm.src = 'https://hm.baidu.com/hm.js?839e08a3c6580e39bb06107e856538a3';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+    
+    
+
+    <!-- Custom Head -->
+    
+
+</head>
+
+
+    
+        <body id="scheme-Paradox" class="lazy">
+            <div class="material-layout  mdl-js-layout has-drawer is-upgraded">
+                
+
+                <!-- Main Container -->
+                <main class="material-layout__content" id="main">
+
+                    <!-- Top Anchor -->
+                    <div id="top"></div>
+
+                    
+                        <!-- Hamburger Button -->
+                        <button class="MD-burger-icon sidebar-toggle">
+                            <span class="MD-burger-layer"></span>
+                        </button>
+                    
+
+                    <!-- Post TOC -->
+
+    
+    <!-- Back Button -->
+    <!--
+    <div class="material-back" id="backhome-div" tabindex="0">
+        <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"
+           href="#" onclick="window.history.back();return false;"
+           target="_self"
+           role="button"
+           data-upgraded=",MaterialButton,MaterialRipple">
+            <i class="material-icons" role="presentation">arrow_back</i>
+            <span class="mdl-button__ripple-container">
+                <span class="mdl-ripple"></span>
+            </span>
+        </a>
+    </div>
+    -->
+
+
+    <!-- Left aligned menu below button -->
+    
+    
+    <button id="post-toc-trigger-btn"
+        class="mdl-button mdl-js-button mdl-button--icon">
+        <i class="material-icons">format_list_numbered</i>
+    </button>
+
+    <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#web-components-应用实例"><span class="post-toc-number">1.</span> <span class="post-toc-text">Web Components 应用实例</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#youtube"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">YouTube</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#photoshop"><span class="post-toc-number">1.2.</span> <span class="post-toc-text">Photoshop</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#msn-edge-bing-vs-code-and-more-at-microsoft"><span class="post-toc-number">1.3.</span> <span class="post-toc-text">MSN, Edge, Bing, VS Code, and More at Microsoft</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#salesforce"><span class="post-toc-number">1.4.</span> <span class="post-toc-text">Salesforce</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#spacex"><span class="post-toc-number">1.5.</span> <span class="post-toc-text">SpaceX</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#标准现状"><span class="post-toc-number">2.</span> <span class="post-toc-text">标准现状</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#组合和作用域"><span class="post-toc-number">2.1.</span> <span class="post-toc-text">组合和作用域</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#平台互操作性"><span class="post-toc-number">2.2.</span> <span class="post-toc-text">平台互操作性</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#渲染和性能"><span class="post-toc-number">2.3.</span> <span class="post-toc-text">渲染和性能</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#样式"><span class="post-toc-number">2.4.</span> <span class="post-toc-text">样式</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#打包和分发"><span class="post-toc-number">2.5.</span> <span class="post-toc-text">打包和分发</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#api-范式"><span class="post-toc-number">2.6.</span> <span class="post-toc-text">API 范式</span></a></li></ol></li></ol>
+    </ul>
+    
+
+
+
+
+<!-- Layouts -->
+
+    <!-- Post Module -->
+    <div class="material-post_container">
+
+        <div class="material-post mdl-grid">
+            <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
+
+                <!-- Post Header(Thumbnail & Title) -->
+                
+    <!-- Paradox Post Header -->
+    
+        <!-- Custom Thumbnail -->
+        <div class="post_thumbnail-custom mdl-card__media mdl-color-text--grey-50" style="background-image:url(https://img.5bang.top/230421.png)">
+    
+            <p class="article-headline-p">
+                2023 State of Web Components
+            </p>
+        </div>
+
+
+
+
+
+                
+                    <!-- Paradox Post Info -->
+                    <div class="mdl-color-text--grey-700 mdl-card__supporting-text meta">
+
+    <!-- Author Avatar -->
+    <div id="author-avatar">
+        <img src="https://img.5bang.top/avatar.png" width="44px" height="44px" alt="Author Avatar"/>
+    </div>
+    <!-- Author Name & Date -->
+    <div>
+        <strong>Silas Shen</strong>
+        <span>4月 21, 2023</span>
+    </div>
+
+    <div class="section-spacer"></div>
+
+    <!-- Favorite -->
+    <!--
+        <button id="article-functions-like-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon btn-like">
+            <i class="material-icons" role="presentation">favorite</i>
+            <span class="visuallyhidden">favorites</span>
+        </button>
+    -->
+
+    <!-- Qrcode -->
+    
+
+    <!-- Tags (bookmark) -->
+    
+    <button id="article-functions-viewtags-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+        <i class="material-icons" role="presentation">bookmark</i>
+        <span class="visuallyhidden">bookmark</span>
+    </button>
+    <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-viewtags-button">
+        <li class="mdl-menu__item">
+        <a class="post_tag-link" href="/tags/JavaScript/">JavaScript</a>
+    </ul>
+    
+
+    <!-- Share -->
+    <button id="article-fuctions-share-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">share</i>
+    <span class="visuallyhidden">share</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-fuctions-share-button">
+    
+
+    
+
+    <!-- Share Weibo -->
+    
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=2023 State of Web Components&url=http://5bang.top/2023/04/21/2023_state_of_web_component/index.html&pic=http://5bang.tophttps://img.5bang.top/favicon.png&searchPic=false&style=simple" target="_blank">
+            <li class="mdl-menu__item">
+                分享到微博
+            </li>
+        </a>
+    
+
+    <!-- Share Twitter -->
+    
+
+    <!-- Share Facebook -->
+    
+
+    <!-- Share Google+ -->
+    
+        <a class="post_share-link" href="https://plus.google.com/share?url=http://5bang.top/2023/04/21/2023_state_of_web_component/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Google+
+            </li>
+        </a>
+    
+
+    <!-- Share LinkedIn -->
+    
+
+    <!-- Share QQ -->
+    
+        <a class="post_share-link" href="http://connect.qq.com/widget/shareqq/index.html?site=Silas&#39;s Blog&title=2023 State of Web Components&summary=NaN&pics=http://5bang.tophttps://img.5bang.top/favicon.png&url=http://5bang.top/2023/04/21/2023_state_of_web_component/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 QQ
+            </li>
+        </a>
+    
+
+    <!-- Share Telegram -->
+    
+</ul>
+
+</div>
+
+                
+
+                <!-- Post Content -->
+                <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
+    
+        <p>最近，我写了一篇关于<a href="https://medium.com/@eisenbergeffect/hello-web-components-795ed1bd108e" target="_blank" rel="noopener">如何构建你的第一个 Web 组件</a>的文章，以及一些关于<a href="https://medium.com/@eisenbergeffect/about-web-components-7b2a3ed67a78" target="_blank" rel="noopener">基本的 v1 Web 组件规范的历史和解释</a>。但自 2020 年 v1 获得完全支持以来，Web Components 的世界发生了更多的变化。未来还有更多的计划。让我们看一些使用当前标准构建的值得关注的例子，以及调查一些将在 2023 年及以后推出的新的 Web Components 标准工作<sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup>。</p>
+<h2 id="web-components-应用实例">Web Components 应用实例</h2>
+<p>随着所有浏览器都支持 v1 Web Components，<a href="https://arewebcomponentsathingyet.com/" target="_blank" rel="noopener">许多公司</a>已经采用并基于这些新标准构建了重要的业务。以下是我认为值得关注的一些例子。</p>
+<h3 id="youtube">YouTube</h3>
+<p><img src="https://img.5bang.top/2023_Web_Component_00.webp" alt="youtube"></p>
+<p>YouTube 是最早采用 Web Components 技术的应用之一，多年来一直使用这种技术构建其界面。检查源代码，你会看到各种自定义元素，从 <code>ytd-video-preview</code> 到 <code>iron-ally-announcer</code>。</p>
+<h3 id="photoshop">Photoshop</h3>
+<p><img src="https://img.5bang.top/202304212350255.png" alt="photoshop"></p>
+<p>是的，Adobe 使用 <a href="https://lit.dev/" target="_blank" rel="noopener">Lit</a> 将 Photoshop 带到了浏览器中。它现在还处于 beta 版本，如果你是 Adobe 的订阅用户，可以自行尝试。整个应用程序中有很多自定义元素，从构成应用程序根的 <code>psw-app</code>，到像 <code>psw-layers-panel</code> 这样的 shell 元素，再到像 <code>sp-action-button</code> 这样的 UI 组件。</p>
+<h3 id="msn-edge-bing-vs-code-and-more-at-microsoft">MSN, Edge, Bing, VS Code, and More at Microsoft</h3>
+<p><img src="https://img.5bang.top/202304212354211.png" alt="fast"></p>
+<p>几年前，微软使用基于 <a href="https://www.fast.design/" target="_blank" rel="noopener">FAST</a> 的 Web Components 重构了 MSN。这将性能提高了 30% 到 50%，比之前使用 React 构建的版本性能更好。</p>
+<p>基于 OpenAI 的 新 Bing 也是使用 <a href="https://www.fast.design/" target="_blank" rel="noopener">FAST Web Components</a> 构建的，如下面的屏幕截图所示，最近由其中一位开发人员分享。</p>
+<p><img src="https://img.5bang.top/202304221249303.png" alt="bing"></p>
+<p>甚至用于扩展 VS Code 新功能的 Webview UI 工具包也是使用 <a href="https://www.fast.design/" target="_blank" rel="noopener">FAST Web Components</a> 构建的，该工具包是由社区使用的 Visual Studio Code 工具包。</p>
+<p><img src="https://img.5bang.top/202304221252443.png" alt="vs code"></p>
+<p>在过去三年中，微软大约有 1,500 个团队/项目采用了 <a href="https://www.fast.design/" target="_blank" rel="noopener">FAST Web Components</a>。</p>
+<h3 id="salesforce">Salesforce</h3>
+<p><img src="https://img.5bang.top/202304221254598.png" alt="salesforce"></p>
+<p>作为客户关系管理（CRM）、销售和营销自动化平台行业中最大的品牌之一，Salesforce 多年来一直在基于 <a href="https://developer.salesforce.com/docs/component-library/documentation/en/lwc" target="_blank" rel="noopener">Lightning Web Components</a> 进行开发。</p>
+<h3 id="spacex">SpaceX</h3>
+<p><img src="https://img.5bang.top/202304221255794.png" alt="spacex"></p>
+<p>如今，Web Components 甚至在太空中也得到了应用。SpaceX 的机组人员显示屏正在运行 Chromium，广泛使用 Web Components。</p>
+<h2 id="标准现状">标准现状</h2>
+<p>Web 标准不断发展，其中包括 Web Components。自从 v1 版本发布到所有主流浏览器以来的三年中，Web Components 下的功能数量几乎翻了一倍。以下是各种已发布、正在进行和计划中的 Web Components 相关标准的图示。</p>
+<p><img src="https://img.5bang.top/202304221300626.png" alt="status"></p>
+<p>让我们逐一查看图示中按照功能划分的六个高级类别中的每一项：组合和作用域、平台互操作性、渲染和性能、样式、包和分发、API 范例。</p>
+<h3 id="组合和作用域">组合和作用域</h3>
+<p><img src="https://img.5bang.top/202304221308067.png" alt="scope"></p>
+<p>Web 组件的作用域/封装特性对于传统编程中的信息隐藏、维护、代码库可扩展性等方面同样非常重要。但是，当涉及到 Web Components 时，它们还为 HTML 和 CSS 运行时提供了额外的元数据，可以用来优化绘制和布局。</p>
+<p><strong>Shadow DOM</strong><br>
+Shadow DOM 是 HTML 中用于作用域、封装和组合 DOM 及相关样式的基本机制。它是一个多方面的特性，具有许多不断扩展的能力。</p>
+<ul>
+<li>
+<p><strong>命名插槽分配（全面支持）</strong>——原始的 v1 Shadow DOM 规范提供了一种完全声明性的机制，用于在 Shadow DOM 中使用<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/slot" target="_blank" rel="noopener">命名的 <code>&lt;slot&gt;</code>元素</a>来定义元素组合的占位符。开发者只需在宿主元素的任何子元素上放置一个 <code>slot</code> 属性，浏览器就会自动“插入”该元素的呈现输出到插槽的位置。</p>
+</li>
+<li>
+<p><strong>开放和封闭模式（全面支持）</strong>—— v1 Shadow DOM 规范中的 <a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/attachShadow" target="_blank" rel="noopener">attachShadow() API</a> 的 <code>mode</code> 选项是其中一部分。它允许组件作者选择其首选的封装模式。<code>open</code> 模式允许从宿主元素外部访问 <code>shadowRoot</code>，而 <code>closed</code> 模式则禁止访问。</p>
+</li>
+<li>
+<p><strong>事件重新定向（全面支持）</strong>——当在 Shadow DOM 内部的元素上触发事件时，这些事件会被“重新定向”，以便它们看起来来自宿主 Shadow DOM。这个 v1 Shadow DOM 规范的能力是正确封装内部结构的重要部分。</p>
+</li>
+<li>
+<p><strong>手动插槽分配（全面支持）</strong>—— <code>slot</code> 元素上的新的 <a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLSlotElement/assign" target="_blank" rel="noopener">assign API</a> 扩展了 v1 的原始插槽分配功能，除了之前的声明性式插槽机制外，还提供了一种命令式 API。</p>
+</li>
+<li>
+<p><strong>焦点委托（全面支持）</strong>——这个在 v1 之后的特性使 Shadow DOM 可以告诉浏览器，当其宿主元素获得焦点时，<a href="https://developer.mozilla.org/en-US/docs/Web/API/ShadowRoot/delegatesFocus" target="_blank" rel="noopener">它应该将焦点委托</a>给 Shadow DOM 中的特定元素。默认情况下，第一个可聚焦的元素被选中，但可以使用 <code>autofocus</code> 属性覆盖该行为。</p>
+</li>
+<li>
+<p><strong>Cross-root ARIA（接近共识）</strong>——即将到来的特性，与社区和浏览器厂商接近达成共识，<a href="https://w3c.github.io/webcomponents-cg/2022.html#cross-root-aria" target="_blank" rel="noopener">Cross-root ARIA</a> 将极大简化在 Shadow DOM 外部与 Shadow DOM 内部的 ARIA 关键元素相关联的操作。例如，将 Shadow DOM 外部的 <code>label</code> 元素与 Shadow DOM 内部的 <code>input</code> 元素关联起来。这些类型的 ARIA 场景今天已经有解决方案，但并不是容易实现的。Cross-root ARIA 将大大改善这种情况。</p>
+</li>
+<li>
+<p><strong>在 Shadow CSS 中使用自定义属性（共识）</strong>——如今，一些浏览器可以<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@property" target="_blank" rel="noopener">使用 @property 语法</a>来定义 CSS 自定义属性。但是，这在 Shadow DOM 中尚不起作用。CSS 对象模型始终可以从自定义元素代码中用于全局定义这些属性，但在 Shadow DOM 中以声明形式提供此功能是一个常识性的改进。这已达成共识，因此希望我们很快就能看到这个功能。<a href="https://caniuse.com/?search=%40property" target="_blank" rel="noopener">随着浏览器更普遍地支持新的 CSS 语法</a>。</p>
+</li>
+</ul>
+<p><strong>作用域元素注册表（共识）</strong><br>
+在自定义元素的 v1 规范中，所有元素都通过 <code>customElements</code> 全局对象在全局自定义元素注册表中注册。这个新的补充功能使得能够实例化非全局注册表并在其中注册自定义元素。</p>
+<pre><code class="language-javascript">const myRegistry = new CustomElementRegistry();  
+myRegistry.define(&quot;my-element&quot;, MyElement);
+</code></pre>
+<p>这个注册表中的元素仅定义为该注册表所分配的 Shadow DOM。这极大地改进了浏览器中的作用域，使得可以按照需要为每个 shadow root 定义元素。当它被应用到浏览器中时，这将会是一个巨大的进步，为新的架构可能性打开了大门。目前，社区和厂商之间已经达成共识，Chromium 正在开发第一个实现。</p>
+<h3 id="平台互操作性">平台互操作性</h3>
+<p><img src="https://img.5bang.top/202304221708964.png" alt></p>
+<p>Web Components 最重要的方面之一是它们如何在组件和平台之间实现互操作性。让我们看一些当前和未来的特性。</p>
+<p><strong>自定义元素</strong></p>
+<ul>
+<li>
+<p><strong>自治自定义元素（全面支持）——</strong> Web Components v1 的这个核心功能通过向 <code>customElements</code> 全局对象注册一个类来<a href="https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_custom_elements" target="_blank" rel="noopener">定义继承自 <code>HTMLElement</code> 的自定义元素</a>。基本的生命周期回调和观察属性也是规范的一部分。</p>
+</li>
+<li>
+<p><strong>自定义内置元素（已拒绝）——</strong> 最初，有一个提案允许从内置元素（例如 <code>HTMLParagraphElement</code>）继承，但 WebKit 实现者发现了几个技术问题，因此已经拒绝了这个规范。它很可能在将来被删除，并且应该避免使用。请参见下面的“自定义属性”，了解可能更好的替代方案。</p>
+</li>
+</ul>
+<p><strong>Element Internals</strong></p>
+<p>一个 v1 之后的新 API，<code>ElementInternals</code>，使得自定义元素能够更深入地与现有的 DOM 子系统进行<a href="https://developer.mozilla.org/en-US/docs/Web/API/ElementInternals" target="_blank" rel="noopener">平台级集成</a>。</p>
+<ul>
+<li>
+<p><strong>Shadow Root 访问（全面支持）</strong> —— 这个简单的添加使组件作者可以检索一个 <code>closed</code> 模式元素的 Shadow Root 实例。如果没有这个功能，具有 <code>closed</code> 模式声明式 Shadow DOM 的元素将无法在运行时访问其根节点。</p>
+</li>
+<li>
+<p><strong>与表单关联的自定义元素（全面支持）</strong> —— 这个重要的新功能使得自定义元素能够<a href="https://developer.mozilla.org/en-US/docs/Web/API/ElementInternals/form" target="_blank" rel="noopener">完全参与表单</a>，包括表单验证、提交和重置。</p>
+</li>
+<li>
+<p><strong>默认可访问性角色、状态和属性（大多数已支持）</strong> —— <a href="https://developer.mozilla.org/en-US/docs/Web/API/ElementInternals#instance_properties_included_from_aria" target="_blank" rel="noopener">这个新的 API 集合</a> 使得可以通过直接在内部与平台进行通信来设置自定义元素的默认可访问性特性，而不是通过可能被用户无意中删除的宿主元素上的外部属性。目前，<em>除 Firefox 外的所有主要浏览器都支持这个新的 API</em>，对于 Firefox，则提供了一个 polyfill。由于 Firefox 已经实现了 <code>ElementInternals</code> 其他部分的 API，如果他们在不久的将来没有发布这个功能，我会感到惊讶。</p>
+</li>
+</ul>
+<p><strong>组合选择（共识/无规范）</strong><br>
+这个改进提出了一个新的 <code>getComposedRange()</code> API，用于 <a href="https://developer.mozilla.org/en-US/docs/Web/API/Selection" target="_blank" rel="noopener">Selection 对象</a>，它使得范围的起始和结束可以跨越多个 Shadow Root。它还将提升浏览器在处理这些情况时的一致性。对于 <a href="https://w3c.github.io/webcomponents-cg/2022.html#initial-api-summary-quick-api-proposal-0" target="_blank" rel="noopener">这个 API 草案</a>，有普遍的共识，但在浏览器可以进行实现之前，仍需要一个完整的规范。在 Web Component 的正常开发过程中，你不太可能遇到这种情况。它主要涉及到富文本编辑器的实现。</p>
+<p><strong>自定义属性（已确定）</strong><br>
+虽然这个功能不一定是 Web Components 的一部分，但它与 Web Components 旨在服务的场景有很高的重叠。这个草案提议启用可重用行为的创建，这些行为可以附加到任何 HTML 元素，遵循类似于 Web Components 的模式。例如，想象一下你想将 Material Design 水波纹效果应用到任何 HTML 元素上，那么这样做会不会很好呢？</p>
+<pre><code class="language-javascript">&lt;button material-ripple&gt;Click Me&lt;/button&gt;
+</code></pre>
+<p>在我为 TPAC 2022 准备的草案提案中，我演示了这个功能的编程模型可能是什么样的：</p>
+<pre><code class="language-javascript">class MaterialRipple extends Attr {
+  // ownerElement inherited from Attr
+  // name inherited from Attr
+  // value inherited from Attr
+  // ...
+
+  connectedCallback () {
+    // called when the ownerElement is connected to the DOM
+    // or when the attribute is added to an already connected owner
+  }
+
+  disconnectedCallback () {
+    // called when the ownerElement is disconnected from the DOM
+    // or when the attribute is removed from a connected owner
+  }
+
+  attributeChangedCallback() {
+    // called when the value property of this attribute changes
+  }
+}
+
+customAttributes.define(&quot;material-ripple&quot;, MaterialRipple);
+</code></pre>
+<p>你会注意到，这个模式和生命周期与 Web Components 是一致的。这也将为被拒绝的可定制内置自定义元素提案中的 <code>is</code> 属性提供更好、更健壮的替代方案。</p>
+<h3 id="渲染和性能">渲染和性能</h3>
+<p><img src="https://img.5bang.top/202304222023792.png" alt></p>
+<p>渲染和性能对于 Web Components 来说非常关键。虽然基本功能已经就位，但这仍然是一个活跃的探索、讨论和未来创新的领域。</p>
+<p><strong>HTML Template 元素（全面支持）</strong></p>
+<p><code>HTMLTemplateElement</code>及其定义惰性HTML内容的能力是v1 Web组件功能的关键部分。在引入该元素之前，没有办法声明不会被浏览器激活的HTML，因此很难创建需要在需求时重复渲染相同HTML的组件。</p>
+<p><strong>声明式 Shadow DOM（大多数支持）</strong><br>
+Shadow DOM 的 v1 规范仅允许通过 <code>attachShadow()</code> JavaScript API 创建 Shadow Root。<a href="https://developer.chrome.com/articles/declarative-shadow-dom/" target="_blank" rel="noopener">这个 Shadow DOM 的新增增强功能</a>允许在 HTML 中完全声明 Shadow DOM 内容，无需使用 JavaScript，为服务器框架提供了有趣的可能性。</p>
+<pre><code class="language-javascript">&lt;host-element&gt;  
+  &lt;template shadowrootmode=&quot;open&quot;&gt;  
+  &lt;slot&gt;&lt;/slot&gt;  
+  &lt;/template&gt;  
+  &lt;h2&gt;Light content&lt;/h2&gt;&gt;  
+&lt;/host-element&gt;
+</code></pre>
+<p>这个规范重用了 <code>template</code> 元素。不要被这个搞混了。它不是一个模板，它是由 HTML 解析器流到 Shadow Root 中的活动 DOM。</p>
+<p><em>当前除了 Firefox 之外，所有浏览器都支持声明式 Shadow DOM。</em> 如果需要，该功能可以通过几行 JavaScript 代码进行 polyfill。</p>
+<p><strong>子节点更改回调函数（提议）</strong><br>
+Web Components 在自定义元素的 v1 规范中有一个明确定义的生命周期，但这并不意味着我们不能在未来扩展这个生命周期。其中一个常见的开发者挑战是使 Web Component 能够对子节点的添加或删除做出响应。虽然现在可以使用 <a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLSlotElement/slotchange_event" target="_blank" rel="noopener">slotchange事件</a> 和 <a href="https://developer.mozilla.org/en-US/docs/Web/API/MutationObserver" target="_blank" rel="noopener">MutationObserver</a> 实现这一点，但是如果有一个像 <code>childrenChangedCallback()</code> 这样的生命周期回调函数，可以提供更好的性能、简化和与 HTML 解析器本身的集成，那就更好了。目前有一个<a href="https://w3c.github.io/webcomponents-cg/2022.html#children-changed-callback" target="_blank" rel="noopener">草案提议</a>，并且实现者也表现出了兴趣。需要一份完整的提案来推动这个功能进入下一个阶段。</p>
+<p><strong>模板实例化</strong><br>
+虽然 HTML 有模板，但它还没有一种机制来实例化与数据连接的模板，并在其相关数据更改时更新它们。这个“模板实例化”的领域有几个独立有价值的部分。</p>
+<ul>
+<li><strong>DOM 部件（提议）</strong> - <a href="https://w3c.github.io/webcomponents-cg/2022.html#initial-api-summary-quick-api-proposal-10" target="_blank" rel="noopener">这个提案</a> 将提供一种标准机制，在 DOM 树的特定位置插入或替换内容。你可以把它看作是一种低级别的启用器，帮助创建更高效的模板引擎和批量更新现有的 Web Component 库和 JavaScript 框架。它不提供响应性解决方案或模板语法，只提供定位和更新 DOM 部分的低级别标准基础设施。</li>
+<li><strong>模板语法（已确定）</strong> - 一旦定位和批量更新的低级基础设施就位并被现有库成功使用，那么关于语法的大辩论就会开始。模板语法是一个非常有争议的问题，但已经认识到 HTML 应该有一个基本的语言来处理这个问题，即使它只是为其他库提供编译目标。</li>
+<li><strong>响应性（已确定）</strong> - DOM 部件提供批量更新 DOM 的标准机制。模板语法提供声明式机制来创建 DOM 部分。剩下的是确定何时应执行 DOM 部件更新的机制。这就是响应性的作用，以完成整个图景。这是另一个有争议的问题，但已经有一些先例，例如通过 Web Components 的 <code>attributeChangedCallback()</code>。这个主题需要更多的探索。</li>
+</ul>
+<p>模板实例化工作类别被分解为上述三个子特性，以便更少有争议的问题可以更早地解决，并为现有库和框架提供路径，以利用不那么主观的、改进性能的功能，减少对它们社区的摩擦。</p>
+<h3 id="样式">样式</h3>
+<p><img src="https://img.5bang.top/202304222322660.png" alt></p>
+<p>虽然Shadow DOM提供了样式的封装，但有许多CSS特性直接与Web组件相关，并且在日常使用中非常重要。</p>
+<p><strong>使用</strong><br>
+有几项当前和未来的标准与 Web 组件如何使用样式来创建 Shadow DOM 的呈现方式有关。虽然一直以来都可以在 Shadow DOM 中创建样式元素，但新标准提供了更好的人机工程学和性能优势。</p>
+<ul>
+<li><strong>可构建样式表（全面支持）</strong> — 您知道在这个标准之前实际上无法创建 <code>CSSStyleSheet</code> 实例吗？这个标准修复了这个问题，现在您可以编写代码 <code>new CSSStyleSheet()</code>。这种能力使得在 Web 组件中更动态地创建和使用样式成为可能，包括在组件之间共享样式表。</li>
+<li><strong>采用样式表（全面支持）</strong> — 针对给定的 <code>CSSStyleSheet</code> 实例，如何将其与特定的 Shadow Root 或全局 document 关联起来？<a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/adoptedStyleSheets" target="_blank" rel="noopener">这个新标准</a> 在 <code>document</code> 和所有 Shadow Root 实例中添加了一个 <code>adoptedStyleSheets</code> 数组。只需将样式表推入该数组中，就可以开始使用了。</li>
+<li><strong>CSS 模块脚本（Chromium）</strong> — 可构建样式表和采用样式表本身提供了创建、共享和关联文档表的原始机制，但仍需要在 JavaScript 中创建 CSS 本身。<a href="https://w3c.github.io/webcomponents-cg/2022.html#css-module-scripts" target="_blank" rel="noopener">CSS 模块脚本标准</a> 允许使用 <code>.css</code> 文件的 JavaScript 模块导入，从而导致平台创建一个 <code>CSSStyleSheet</code> 实例，无需在 CSS 运行时和 JavaScript 运行时之间来回切换。</li>
+<li><strong>声明式 CSS 模块（已确定）</strong> — 随着声明式 Shadow DOM 和采用样式表的出现，已经创建了几个临时提议，以便声明 CSS 模块并将其与声明式 Shadow DOM 关联。这方面需要更多的探索，但这是 HTML 和 CSS 未来的一个令人兴奋的可能性。</li>
+</ul>
+<p><strong>呈现</strong><br>
+主要来说，CSS 关注呈现方面的问题。有一些标准扩展了 Web Components 的样式可能性。</p>
+<p>不仅仅是 Web Components，对于创建组件系统来说，<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties" target="_blank" rel="noopener">自定义 CSS 属性</a> 是一个非常重要的规范，它能够创建本地 CSS 变量，并可以在 shadow roots 中使用。</p>
+<ul>
+<li><strong>CSS Shadow Parts（全面支持）</strong> — <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/::part" target="_blank" rel="noopener">CSS 部分</a> 允许在 Shadow DOM 中声明元素作为“部分”，可以使用外部选择器对其进行样式设置。这是通过 <code>part</code> 属性和 <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/exportparts" target="_blank" rel="noopener">the exportparts 属性</a> 实现的，用于嵌套场景。</li>
+<li><strong>CSS 自定义状态（Chromium）</strong> — 原生元素可以具有自定义状态，在 CSS 选择器中可用。例如，复选框的“已选中”和“未选中”状态。<a href="https://developer.mozilla.org/en-US/docs/Web/API/CustomStateSet" target="_blank" rel="noopener">这个新功能</a> 允许 Web 组件定义自己的状态。已经达成共识，Chromium 已经发布了第一个实现，可以通过 <code>ElementInternals</code> 访问。在等待其他浏览器跟进时，可以使用 polyfill 进行支持。</li>
+<li><strong>CSS 主题（提议）</strong> — 尽管可以通过仔细使用 CSS 自定义属性和 CSS Shadow Parts 来实现丰富的主题化，但可以通过明确地<a href="https://w3c.github.io/webcomponents-cg/2022.html#theming" target="_blank" rel="noopener">将主题的概念引入 CSS</a>来简化和改进这一过程。</li>
+<li><strong>开放式 Shadow Root 样式（已确定）</strong> — 尽管可以使用可构建样式表和采用样式表使任何全局 CSS 在 Shadow Root 中共享，但对于普通 Web 开发人员来说，这可能不是一个直观的过程。有一些探索机制的方法，明确选择允许外部 CSS 进入某些 shadow roots。</li>
+</ul>
+<h3 id="打包和分发">打包和分发</h3>
+<p><img src="https://img.5bang.top/202304222353532.png" alt></p>
+<p>到目前为止，我们主要谈论了与 Web Components 实现相关的标准。但同样重要的是考虑组件如何打包和加载。</p>
+<p><strong>自定义元素懒加载（提议）</strong><br>
+现在，我们可以使用全局的 <code>customElements</code> 注册表定义组件，很快还可以使用自定义注册表。但是，在这两种情况下，在定义组件之前，组件的实现必须已经被加载。使用<a href="https://w3c.github.io/webcomponents-cg/2022.html#lazy-custom-element-definitions" target="_blank" rel="noopener">自定义元素懒加载</a>，开发人员将能够告诉平台有关元素的信息，但是可以延迟加载它，直到元素首次出现在文档中时才加载。它可能会像这样工作：</p>
+<pre><code class="language-javascript">customElements.defineLazy(  
+  &quot;my-element&quot;,   
+  async () =\&gt; (await import(&quot;my-element.js&quot;)).default  
+);
+</code></pre>
+<p>这个规范似乎被大多数人认为是一种很好的东西，尤其是对于某些架构来说。然而，该提议的细节仍在争论中。</p>
+<p><strong>HTML 模块脚本（已确定）</strong></p>
+<p>HTML 模块脚本是 CSS 模块脚本的 HTML 等效物。通过 <a href="https://w3c.github.io/webcomponents-cg/2022.html#html-modules" target="_blank" rel="noopener">HTML 模块脚本提案</a>，模板（和其他 HTML 片段）将通过 JS 模块系统直接可导入。目前只有一个草案提案，还需要进一步讨论许多细节，但这被认为是一个重要的长期增强功能，特别是考虑到未来可能存在只有单个 HTML 文件的 Web Components 的情况。</p>
+<h3 id="api-范式">API 范式</h3>
+<p><img src="https://img.5bang.top/202304230000633.png" alt></p>
+<p>最后一个标准类别与我之前讨论的所有内容有些不同。这些标准涉及 Web Components 的基本编程范式。Web Components v1 主要是一种命令式的 JavaScript 编程模型。有一些值得注意的例外，比如声明式的 slot 分配。但基本上，它完全是命令式的。自 v1 以来，我们一直在努力引入越来越多的声明式特性。其中一个很好的例子是声明式 Shadow DOM。总的来说，最好为每个东西都提供声明式和命令式的 API。但最终目标是最终拥有某种完全声明式定义的 Web Component，以便服务器可以向浏览器发送元素定义，在 noscript 上下文中可以完全工作。我们还有一段路要走，但当我们到达那里时，它将从根本上改变客户端和服务器开发。</p>
+<p>标准的工作永远在进行中。事实上，从今天开始，W3C Web 组件社区组正在召开其 2023 年春季面对面活动。就像 TPAC 一样，这是一个机会，供库作者、组件创建者、浏览器厂商等聚集在一起，并花费专门的时间来解决仍需要共识或存在开放问题的规范的细节。我期待在后续的博客文章中向大家更新活动结果。请关注/订阅以确保您获得更新 😄</p>
+<p>我希望您觉得这个 Web 组件标准之旅很有意义。看到我们已经走了多远，未来还有什么等待我们，这很有趣。随着 v1 版本的发布，过去几年中已经发布的功能翻了一番，以及即将到来令人兴奋的新功能，现在是成为 Web 开发人员的好时机。</p>
+<hr class="footnotes-sep">
+<section class="footnotes">
+<ol class="footnotes-list">
+<li id="fn1" class="footnote-item"><p><a href="https://eisenbergeffect.medium.com/2023-state-of-web-components-c8feb21d4f16" target="_blank" rel="noopener">原文链接</a> <a href="#fnref1" class="footnote-backref">↩</a></p>
+</li>
+</ol>
+</section>
+
+        
+    
+
+    
+</div>
+
+
+                
+
+                <!-- Post Comments -->
+                
+                    
+                
+            </div>
+
+            <!-- Post Prev & Next Nav -->
+            <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
+    <!-- Prev Nav -->
+    
+
+    <!-- Section Spacer -->
+    <div class="section-spacer"></div>
+
+    <!-- Next Nav -->
+    
+        <a href="/2023/04/16/weekly_103/" id="post_nav-older" class="next-content">
+            上一篇
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_forward</i>
+            </button>
+        </a>
+    
+</nav>
+
+        </div>
+    </div>
+
+
+
+                    
+                        <!-- Overlay For Active Sidebar -->
+<div class="sidebar-overlay"></div>
+
+<!-- Material sidebar -->
+<aside id="sidebar" class="sidebar sidebar-colored sidebar-fixed-left" role="navigation">
+    <div id="sidebar-main">
+        <!-- Sidebar Header -->
+        <div class="sidebar-header header-cover" style="background-image: url(https://img.5bang.top/sidebar_header.png);">
+    <!-- Top bar -->
+    <div class="top-bar"></div>
+
+    <!-- Sidebar toggle button -->
+    <button type="button" class="sidebar-toggle mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" style="display: initial;" data-upgraded=",MaterialButton,MaterialRipple">
+        <i class="material-icons">clear_all</i>
+        <span class="mdl-button__ripple-container">
+            <span class="mdl-ripple">
+            </span>
+        </span>
+    </button>
+
+    <!-- Sidebar Avatar -->
+    <div class="sidebar-image">
+        <img src="https://img.5bang.top/avatar.png" alt="Silas Shen's avatar">
+    </div>
+
+    <!-- Sidebar Email -->
+    <a data-toggle="dropdown" class="sidebar-brand" href="#settings-dropdown">
+        ei_shen@outlook.com
+        <b class="caret"></b>
+    </a>
+</div>
+
+
+        <!-- Sidebar Navigation  -->
+        <ul class="nav sidebar-nav">
+    <!-- User dropdown  -->
+    <li class="dropdown">
+        <ul id="settings-dropdown" class="dropdown-menu">
+            
+                <li>
+                    <a href="mailto: ei_shen@163.com" target="_blank" title="Email Me">
+                        
+                            <i class="material-icons sidebar-material-icons sidebar-indent-left1pc-element">send</i>
+                        
+                        Email Me
+                    </a>
+                </li>
+            
+        </ul>
+    </li>
+
+    <!-- Homepage -->
+    
+        <li id="sidebar-first-li">
+            <a href="/">
+                
+                    <i class="material-icons sidebar-material-icons">home</i>
+                
+                主页
+            </a>
+        </li>
+        
+    
+
+    <!-- Archives  -->
+    
+        <li class="dropdown">
+            <a href="#" class="ripple-effect dropdown-toggle" data-toggle="dropdown">
+                
+                    <i class="material-icons sidebar-material-icons">inbox</i>
+                
+                    归档
+                <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+            <li>
+                <a class="sidebar_archives-link" href="/archives/2023/04/">四月 2023<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/archives/2023/03/">三月 2023<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/archives/2023/01/">一月 2023<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2022/10/">十月 2022<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2022/07/">七月 2022<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2022/05/">五月 2022<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2021/08/">八月 2021<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/archives/2021/03/">三月 2021<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2021/01/">一月 2021<span class="sidebar_archives-count">3</span></a></li><li><a class="sidebar_archives-link" href="/archives/2020/04/">四月 2020<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2020/03/">三月 2020<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2020/02/">二月 2020<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/archives/2019/12/">十二月 2019<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/archives/2019/11/">十一月 2019<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2019/09/">九月 2019<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2019/07/">七月 2019<span class="sidebar_archives-count">4</span></a></li><li><a class="sidebar_archives-link" href="/archives/2019/04/">四月 2019<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2019/03/">三月 2019<span class="sidebar_archives-count">3</span></a></li><li><a class="sidebar_archives-link" href="/archives/2019/02/">二月 2019<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2019/01/">一月 2019<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/12/">十二月 2018<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/11/">十一月 2018<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/10/">十月 2018<span class="sidebar_archives-count">3</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/09/">九月 2018<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/07/">七月 2018<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/05/">五月 2018<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/04/">四月 2018<span class="sidebar_archives-count">3</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/03/">三月 2018<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/12/">十二月 2017<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/11/">十一月 2017<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/10/">十月 2017<span class="sidebar_archives-count">8</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/09/">九月 2017<span class="sidebar_archives-count">28</span></a>
+            </ul>
+        </li>
+        
+    
+
+    <!-- Categories  -->
+    
+        <li class="dropdown">
+            <a href="#" class="ripple-effect dropdown-toggle" data-toggle="dropdown">
+                
+                    <i class="material-icons sidebar-material-icons">view_quilt</i>
+                
+                分类
+                <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+                <li>
+                <a class="sidebar_archives-link" href="/categories/LHTL/">LHTL<span class="sidebar_archives-count">4</span></a></li><li><a class="sidebar_archives-link" href="/categories/kindle-笔记/">kindle 笔记<span class="sidebar_archives-count">26</span></a></li><li><a class="sidebar_archives-link" href="/categories/weekly/">weekly<span class="sidebar_archives-count">3</span></a></li><li><a class="sidebar_archives-link" href="/categories/前端/">前端<span class="sidebar_archives-count">25</span></a></li><li><a class="sidebar_archives-link" href="/categories/学习笔记/">学习笔记<span class="sidebar_archives-count">3</span></a></li><li><a class="sidebar_archives-link" href="/categories/软件测试/">软件测试<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/随笔/">随笔<span class="sidebar_archives-count">24</span></a>
+            </ul>
+        </li>
+        
+            <li class="divider"></li>
+        
+    
+
+    <!-- Pages  -->
+    
+        <li>
+            <a href="/timeline" title="时间轴">
+                
+                    <i class="material-icons sidebar-material-icons">opacity</i>
+                
+                时间轴
+            </a>
+        </li>
+        
+    
+        <li>
+            <a href="/tags" title="标签云">
+                
+                    <i class="material-icons sidebar-material-icons">cloud_queue</i>
+                
+                标签云
+            </a>
+        </li>
+        
+    
+        <li>
+            <a href="/about" title="关于我">
+                
+                    <i class="material-icons sidebar-material-icons">person</i>
+                
+                关于我
+            </a>
+        </li>
+        
+            <li class="divider"></li>
+        
+    
+
+    <!-- Article Number  -->
+    
+        <li>
+            <a href="/archives">
+                文章总数
+                <span class="sidebar-badge">86</span>
+            </a>
+        </li>
+        
+    
+</ul>
+
+
+        <!-- Sidebar Footer -->
+        <!--
+I'm glad you use this theme, the development is no so easy, I hope you can keep the copyright, I will thank you so much.
+If you still want to delete the copyrights, could you still retain the first one? Which namely "Theme Material"
+It will not impact the appearance and can give developers a lot of support :)
+
+很高兴您使用并喜欢该主题，开发不易 十分谢谢与希望您可以保留一下版权声明。
+如果您仍然想删除的话 能否只保留第一项呢？即 "Theme Material"
+它不会影响美观并可以给开发者很大的支持和动力。 :)
+-->
+
+<!-- Sidebar Divider -->
+
+
+<!-- Theme Material -->
+
+
+<!-- Help & Support -->
+<!--
+
+-->
+
+<!-- Feedback -->
+<!--
+
+-->
+
+<!-- About Theme -->
+<!--
+
+-->
+
+    </div>
+
+    <!-- Sidebar Image -->
+    
+
+</aside>
+
+                    
+
+                    
+                        <!-- Footer Top Button -->
+                        <div id="back-to-top" class="toTop-wrap">
+    <a href="#top" class="toTop">
+        <i class="material-icons footer_top-i">expand_less</i>
+    </a>
+</div>
+
+                    
+
+                    <!--Footer-->
+<footer class="mdl-mini-footer" id="bottom">
+    
+        <!-- Paradox Footer Left Section -->
+        <div class="mdl-mini-footer--left-section sns-list">
+    <!-- Twitter -->
+    
+        <a href="https://twitter.com/silashenn" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn footer-sns-twitter">
+                <span class="visuallyhidden">Twitter</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- Facebook -->
+    
+
+    <!-- Google + -->
+    
+
+    <!-- Weibo -->
+    
+
+    <!-- Instagram -->
+    
+
+    <!-- Tumblr -->
+    
+
+    <!-- Github -->
+    
+        <a href="https://github.com/occupy5" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn footer-sns-github">
+                <span class="visuallyhidden">Github</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- LinkedIn -->
+    
+
+    <!-- Zhihu -->
+    
+        <a href="https://www.zhihu.com/people/occupy5" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn footer-sns-zhihu">
+                <span class="visuallyhidden">Zhihu</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- Bilibili -->
+    
+
+    <!-- Telegram -->
+    
+    
+    <!-- V2EX -->
+    
+</div>
+
+
+        <!--Copyright -->
+        <div id="copyright">
+            Copyright&nbsp;©<script type="text/javascript">var fd = new Date();document.write("&nbsp;" + fd.getFullYear() + "&nbsp;");</script>Silas's Blog
+            
+        </div>
+       
+        <!-- Paradox Footer Right Section -->
+
+        <!--
+        I am glad you use this theme, the development is no so easy, I hope you can keep the copyright.
+        It will not impact the appearance and can give developers a lot of support :)
+
+        很高兴您使用该主题，开发不易，希望您可以保留一下版权声明。
+        它不会影响美观并可以给开发者很大的支持。 :)
+        -->
+
+        <div class="mdl-mini-footer--right-section">
+            <div>
+                <div class="footer-develop-div">Powered by <a href="https://hexo.io" target="_blank" class="footer-develop-a">Hexo</a></div>
+                <div class="footer-develop-div">Theme - <a href="https://github.com/viosey/hexo-theme-material" target="_blank" class="footer-develop-a">Material</a></div>
+            </div>
+        </div>
+    
+</footer>
+
+
+                    <!-- Import JS File -->
+
+    <script>lsloader.load("lazyload_js","/js/lazyload.min.js?1BcfzuNXqV+ntF6gq+5X3Q==", true)</script>
+
+
+
+    <script>lsloader.load("js_js","/js/js.min.js?V/53wGualMuiPM3xoetD5Q==", true)</script>
+
+
+
+    <script>lsloader.load("np_js","/js/nprogress.js?pl3Qhb9lvqR1FlyLUna1Yw==", true)</script>
+
+
+<script type="text/ls-javascript" id="NProgress-script">
+    NProgress.configure({
+        showSpinner: true
+    });
+    NProgress.start();
+    $('#nprogress .bar').css({
+        'background': '#29d'
+    });
+    $('#nprogress .peg').css({
+        'box-shadow': '0 0 10px #29d, 0 0 15px #29d'
+    });
+    $('#nprogress .spinner-icon').css({
+        'border-top-color': '#29d',
+        'border-left-color': '#29d'
+    });
+    setTimeout(function() {
+        NProgress.done();
+        $('.fade').removeClass('out');
+    }, 800);
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- UC Browser Compatible -->
+<script>
+	var agent = navigator.userAgent.toLowerCase();
+	if(agent.indexOf('ucbrowser')>0) {
+		document.write('<link rel="stylesheet" href="/css/uc.css">');
+	   alert('由于 UC 浏览器使用极旧的内核，而本网站使用了一些新的特性。\n为了您能更好的浏览，推荐使用 Chrome 或 Firefox 浏览器。');
+	}
+</script>
+
+<!-- Import prettify js  -->
+
+
+    
+        <script>lsloader.load("hanabi","/js/hanabi-browser-bundle.js?Pki5+pzkluqu53g+ouMWpA==", true)</script>
+    
+
+
+<!-- Window Load -->
+<!-- add class for prettify -->
+<script type="text/ls-javascript" id="window-load">
+    $(window).on('load', function() {
+        // Post_Toc parent position fixed
+        $('.post-toc-wrap').parent('.mdl-menu__container').css('position', 'fixed');
+    });
+
+    
+    
+        
+        
+        HanabiBrowser.start('pre code',true);
+    
+</script>
+
+<!-- MathJax Load-->
+
+
+<!-- Bing Background -->
+
+
+<script type="text/ls-javascript" id="lazy-load">
+    // Offer LazyLoad
+    queue.offer(function(){
+        $('.lazy').lazyload({
+            effect : 'show'
+        });
+    });
+
+    // Start Queue
+    $(document).ready(function(){
+        setInterval(function(){
+            queue.execNext();
+        },200);
+    });
+</script>
+
+<!-- Custom Footer -->
+
+
+
+<script>
+    (function(){
+        var scriptList = document.querySelectorAll('script[type="text/ls-javascript"]')
+
+        for (var i = 0; i < scriptList.length; ++i) {
+            var item = scriptList[i];
+            lsloader.runInlineScript(item.id,item.id);
+        }
+    })()
+console.log('\n %c © Material Theme | Version: 1.5.0 | https://github.com/viosey/hexo-theme-material %c \n', 'color:#455a64;background:#e0e0e0;padding:5px 0;border-top-left-radius:5px;border-bottom-left-radius:5px;', 'color:#455a64;background:#e0e0e0;padding:5px 0;border-top-right-radius:5px;border-bottom-right-radius:5px;');
+</script>
+
+                </main>
+            </div>
+        </body>
+    
+</html>
