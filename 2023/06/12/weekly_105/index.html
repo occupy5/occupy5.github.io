@@ -244,7 +244,7 @@
 
     
         <meta property="article:published_time" content="Mon Jun 12 2023 00:00:00 GMT+0800">
-        <meta property="article:modified_time" content="Mon Jun 12 2023 23:57:21 GMT+0800">
+        <meta property="article:modified_time" content="Tue Jun 13 2023 22:18:47 GMT+0800">
     
 
     <!-- The Twitter Card protocol -->
@@ -271,7 +271,7 @@
     "mainEntityOfPage": "http://5bang.top/2023/06/12/weekly_105/index.html",
     "headline": "记一次 wagmi 的升级过程",
     "datePublished": "Mon Jun 12 2023 00:00:00 GMT+0800",
-    "dateModified": "Mon Jun 12 2023 23:57:21 GMT+0800",
+    "dateModified": "Tue Jun 13 2023 22:18:47 GMT+0800",
     "author": {
         "@type": "Person",
         "name": "Silas Shen",
@@ -357,6 +357,15 @@
 
     <!-- Left aligned menu below button -->
     
+    
+    <button id="post-toc-trigger-btn"
+        class="mdl-button mdl-js-button mdl-button--icon">
+        <i class="material-icons">format_list_numbered</i>
+    </button>
+
+    <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#目标版本"><span class="post-toc-number">1.</span> <span class="post-toc-text">目标版本</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#迁移过程"><span class="post-toc-number">2.</span> <span class="post-toc-text">迁移过程</span></a></li></ol>
+    </ul>
     
 
 
@@ -482,12 +491,26 @@
                 <!-- Post Content -->
                 <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
     
-        <p>最近 wagmi, viem, rainbowkit 陆续都有大的版本更新，是时候把之前项目中的相关依赖统一升级一次了。</p>
+        <p>最近 wagmi, viem, rainbowkit 陆续都有大的版本更新，是时候把之前项目中的相关依赖（wagmi v0.5.x 以及 ether.js）统一升级一次了。</p>
+<h2 id="目标版本">目标版本</h2>
 <ul>
-<li><a href="https://github.com/wagmi-dev/wagmi/releases/tag/wagmi%401.1.1" target="_blank" rel="noopener">wagmi @1.1.1</a></li>
+<li><a href="https://github.com/wagmi-dev/wagmi/releases/tag/wagmi%401.2.0" target="_blank" rel="noopener">wagmi @1.2.0</a></li>
 <li><a href="https://github.com/wagmi-dev/viem/releases/tag/viem%401.0.1" target="_blank" rel="noopener">viem @1.0.1</a></li>
 <li><a href="https://github.com/rainbow-me/rainbowkit/releases/tag/%40rainbow-me%2Frainbowkit%401.0.1" target="_blank" rel="noopener">rainbowkit @1.0.1</a></li>
 </ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:center"><img src="https://img.5bang.top/202306132214556.png" alt="wagmi"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><em>wagmi v1.2.0</em></td>
+</tr>
+</tbody>
+</table>
+<h2 id="迁移过程">迁移过程</h2>
 <p>wagmi 官方的<a href="https://wagmi.sh/react/migration-guide" target="_blank" rel="noopener">迁移文档</a>写的很棒，对我而言主要关注的是下面几个方面的变化：</p>
 <ul>
 <li>provider =&gt; publicClient()</li>
